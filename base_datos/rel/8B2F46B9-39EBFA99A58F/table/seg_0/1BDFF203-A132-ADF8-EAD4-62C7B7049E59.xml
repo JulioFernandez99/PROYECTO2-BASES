@@ -1,0 +1,110 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1BDFF203-A132-ADF8-EAD4-62C7B7049E59" name="MUNICIPIO">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-12 18:01:32 UTC</createdTime>
+<generatorID>AD5B8BB0-92F2-9F7D-19ED-962419E6372A</generatorID>
+<ownerDesignName>base_datos</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_municipio" id="4D694177-9BDE-1680-92F7-B8626A44B6F2">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-12 18:01:32 UTC</createdTime>
+<generatorID>ED10A2DD-FA73-3AF8-27C8-68A55AFFCD2F</generatorID>
+<ownerDesignName>base_datos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="9B9B7523-204C-969E-ACD3-222250B9EA27">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-12 18:01:32 UTC</createdTime>
+<generatorID>DE1839F9-7DA7-E79B-53F8-A14CF8E32A84</generatorID>
+<ownerDesignName>base_datos</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="direccion" id="D24A622E-0E37-3312-5C5A-950632508F4A">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-12 18:01:32 UTC</createdTime>
+<generatorID>F390B33B-E53E-0A92-97CC-CC8984A9FF27</generatorID>
+<ownerDesignName>base_datos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="codigo_postal" id="2D5DED02-4841-81EA-017A-F475DD26AE00">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-12 18:01:32 UTC</createdTime>
+<generatorID>16C94177-90AD-E178-1995-942DBB186A29</generatorID>
+<ownerDesignName>base_datos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_departamento" id="52AF7AD9-2A42-9903-0EE2-630D85CE6F43">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-12 18:01:32 UTC</createdTime>
+<generatorID>D579AAC5-0523-E53D-D358-4DF4D4FE9BFA</generatorID>
+<ownerDesignName>base_datos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DEPARTAMENTO_id_departamento" id="BA81BE93-610D-71E5-8291-DAF35008713D">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-12 18:01:32 UTC</createdTime>
+<generatorID>3A9003FA-1CFA-8946-34B2-2E03B6E923B4</generatorID>
+<ownerDesignName>base_datos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="90AF635B-196D-0F8F-F0F4-746B36CE02E5" referredColumn="C9F1B5B5-35F5-B7BC-E34B-EAFB653A6DB2"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="74E92B7F-654F-087C-97F1-BC61A401E917" name="MUNICIPIO_PK">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-12 18:01:32 UTC</createdTime>
+<generatorID>9BF26053-77FF-F89E-B880-65449376A314</generatorID>
+<ownerDesignName>base_datos</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4D694177-9BDE-1680-92F7-B8626A44B6F2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="036DA509-5F5D-BD66-01C6-CC456593C584" name="MUNICIPIO_DEPARTAMENTO_FK">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-12 18:01:32 UTC</createdTime>
+<generatorID>25A49D7A-CB42-8B8A-DBE0-5D9A37E6406F</generatorID>
+<ownerDesignName>base_datos</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BA81BE93-610D-71E5-8291-DAF35008713D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

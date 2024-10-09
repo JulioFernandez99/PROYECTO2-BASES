@@ -1,0 +1,59 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="7220C7E3-10D0-C995-60BF-19E88FC0FF8B" name="TIPO_TRANSACCION">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-12 06:24:17 UTC</createdTime>
+<ownerDesignName>base_datos</ownerDesignName>
+<engineerTo>
+<item key="8B2F46B9-F884-DCFF-D209-39EBFA99A58F" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_tipo_transaccion" id="CDF90A82-8051-B6FF-B3D8-363C8DEF867D">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-12 17:55:05 UTC</createdTime>
+<ownerDesignName>base_datos</ownerDesignName>
+<engineerTo>
+<item key="8B2F46B9-F884-DCFF-D209-39EBFA99A58F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tipo_transaccion" id="4492D436-D391-70A8-A4A4-45176F97E9BD">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-12 17:55:16 UTC</createdTime>
+<ownerDesignName>base_datos</ownerDesignName>
+<engineerTo>
+<item key="8B2F46B9-F884-DCFF-D209-39EBFA99A58F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="A397D848-C0DF-A69A-7B85-17C12AFE521F" name="TIPO_TRANSACCION PK">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-12 17:55:09 UTC</createdTime>
+<ownerDesignName>base_datos</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="8B2F46B9-F884-DCFF-D209-39EBFA99A58F" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>CDF90A82-8051-B6FF-B3D8-363C8DEF867D</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,47 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E3BB0F12-6FB0-9618-D648-28C626E2DDAD" name="PAGOS_PRESTAMO">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-10-09 09:23:41 UTC</createdTime>
+<ownerDesignName>base_datos</ownerDesignName>
+<engineerTo>
+<item key="8B2F46B9-F884-DCFF-D209-39EBFA99A58F" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_prestamo" id="27134206-683E-A7E0-5AE0-CA024BE21C60">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-10-09 09:32:01 UTC</createdTime>
+<generatorID>7FFE3981-064E-65A0-66B0-15C13E60F9CA</generatorID>
+<ownerDesignName>base_datos</ownerDesignName>
+<engineerTo>
+<item key="8B2F46B9-F884-DCFF-D209-39EBFA99A58F" value="true"/>
+</engineerTo>
+<referedAttribute>6D2F1006-0FB7-8FB7-E744-558B692B74DF</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="16F29B4C-298A-8878-D172-E912ADA4BA3C" name="PAGOS_PRESTAMO PK">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-10-09 09:32:01 UTC</createdTime>
+<ownerDesignName>base_datos</ownerDesignName>
+<engineerTo>
+<item key="8B2F46B9-F884-DCFF-D209-39EBFA99A58F" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>27134206-683E-A7E0-5AE0-CA024BE21C60</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

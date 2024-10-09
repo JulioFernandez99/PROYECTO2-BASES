@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="C90D8760-D898-10F9-E088-4D383EABAAAF" containerWithKeyObject="2FA2D9C7-2FBE-4D7C-C2D6-BC9AC0057790" localFKIndex="A8FA9CD9-BB6B-59D4-D412-46ACBE10FDDB" name="TARJETA_CREDITO_ESTADO_TARJETA_FK">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-12 18:01:32 UTC</createdTime>
+<generatorID>EADE032E-32E5-418C-422F-4FD39D9F6430</generatorID>
+<ownerDesignName>base_datos</ownerDesignName>
+<referredTableLongName>ESTADO_TARJETA</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>9C66782C-2CA4-B2C2-D484-6594B7D437FF</referredTableID>
+<keyObject>B296093E-750F-A8B7-5749-C99E34E50950</keyObject>
+<referredKeyID>B296093E-750F-A8B7-5749-C99E34E50950</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_estado_tarjeta</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

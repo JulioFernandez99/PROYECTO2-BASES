@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="CA908DF8-C828-44B8-EC3B-A9C545F64CB0" containerWithKeyObject="ADF25AA5-5764-1342-F50C-2DFD730D3729" localFKIndex="C4BFCEA2-92A3-069F-CE30-C0721AB9169F" name="TIPO_CUENTA_CUENTA_FK">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-12 18:01:32 UTC</createdTime>
+<generatorID>7013F2E2-597D-B202-2EEB-34FA55302166</generatorID>
+<ownerDesignName>base_datos</ownerDesignName>
+<referredTableLongName>CUENTA</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>40F35172-BBA2-4677-A01B-73E565715F75</referredTableID>
+<keyObject>C6135588-D47C-BA33-140F-70F3D4E288D4</keyObject>
+<referredKeyID>C6135588-D47C-BA33-140F-70F3D4E288D4</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>id_cuenta</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

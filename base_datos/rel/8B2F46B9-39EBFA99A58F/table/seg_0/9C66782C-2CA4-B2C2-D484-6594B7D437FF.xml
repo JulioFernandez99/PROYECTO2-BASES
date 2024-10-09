@@ -1,0 +1,49 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9C66782C-2CA4-B2C2-D484-6594B7D437FF" name="ESTADO_TARJETA">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-12 18:01:32 UTC</createdTime>
+<generatorID>9707854A-E8CF-0CF6-1406-FDB9FD635046</generatorID>
+<ownerDesignName>base_datos</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_estado_tarjeta" id="A21B2B9D-D91D-036B-5529-BA5DDFF7CCAF">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-12 18:01:32 UTC</createdTime>
+<generatorID>CB70E08D-EEC7-FB53-AA44-3491EF46D948</generatorID>
+<ownerDesignName>base_datos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="estado" id="1D929F6F-6D6A-0C46-5CB6-5025C403C42D">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-12 18:01:32 UTC</createdTime>
+<generatorID>7375D249-1CFF-447F-961F-2C18609448C7</generatorID>
+<ownerDesignName>base_datos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B296093E-750F-A8B7-5749-C99E34E50950" name="ESTADO_TARJETA_PK">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-12 18:01:32 UTC</createdTime>
+<generatorID>75AA8CD5-2802-1AE5-D6CF-0A673173945F</generatorID>
+<ownerDesignName>base_datos</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A21B2B9D-D91D-036B-5529-BA5DDFF7CCAF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,174 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="CE845FC6-9A5D-0E51-DA1F-84F7FA44D575" name="TARJETA_CREDITO">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-12 06:23:32 UTC</createdTime>
+<ownerDesignName>base_datos</ownerDesignName>
+<engineerTo>
+<item key="8B2F46B9-F884-DCFF-D209-39EBFA99A58F" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_tarjeta" id="2C275457-EF9B-E69A-E0FA-1C0FA175B5BD">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-12 17:05:11 UTC</createdTime>
+<ownerDesignName>base_datos</ownerDesignName>
+<engineerTo>
+<item key="8B2F46B9-F884-DCFF-D209-39EBFA99A58F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_cliente" id="52A62D8B-0CE5-F2F3-449B-BF7CA1618165">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-12 16:49:35 UTC</createdTime>
+<generatorID>BCABE14F-ACFA-2051-2174-FDF10B53FB67</generatorID>
+<ownerDesignName>base_datos</ownerDesignName>
+<engineerTo>
+<item key="8B2F46B9-F884-DCFF-D209-39EBFA99A58F" value="true"/>
+</engineerTo>
+<referedAttribute>15A02695-0D8A-7BF3-BEB6-F4C380019975</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="num_tarjeta" id="BCA70406-C6D2-8B93-F6CC-E72BED988A6D">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-12 17:05:33 UTC</createdTime>
+<ownerDesignName>base_datos</ownerDesignName>
+<engineerTo>
+<item key="8B2F46B9-F884-DCFF-D209-39EBFA99A58F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="limite_credito" id="49F55F65-E1F6-2405-30AD-7E3EDB06F624">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-12 17:06:50 UTC</createdTime>
+<ownerDesignName>base_datos</ownerDesignName>
+<engineerTo>
+<item key="8B2F46B9-F884-DCFF-D209-39EBFA99A58F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>15</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,15,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="saldo_actual" id="65C63FF3-77F9-5B55-EA26-8947540CBF85">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-12 17:07:16 UTC</createdTime>
+<ownerDesignName>base_datos</ownerDesignName>
+<engineerTo>
+<item key="8B2F46B9-F884-DCFF-D209-39EBFA99A58F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>15</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,15,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fecha_emision" id="9963C682-8F41-AE0F-F9D3-FA7B5C7B487B">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-12 17:07:40 UTC</createdTime>
+<ownerDesignName>base_datos</ownerDesignName>
+<engineerTo>
+<item key="8B2F46B9-F884-DCFF-D209-39EBFA99A58F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fecha_expiracion" id="BB83C604-E0AA-6358-51C9-085605F04FED">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-12 17:07:58 UTC</createdTime>
+<ownerDesignName>base_datos</ownerDesignName>
+<engineerTo>
+<item key="8B2F46B9-F884-DCFF-D209-39EBFA99A58F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fecha_corte" id="A69CE8F6-66A3-72E2-4395-3AE5097CA1AB">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-12 17:08:15 UTC</createdTime>
+<ownerDesignName>base_datos</ownerDesignName>
+<engineerTo>
+<item key="8B2F46B9-F884-DCFF-D209-39EBFA99A58F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dia_ciclo" id="1A17D7E5-92D8-8F75-18BA-300FCFB27A80">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-12 17:08:31 UTC</createdTime>
+<ownerDesignName>base_datos</ownerDesignName>
+<engineerTo>
+<item key="8B2F46B9-F884-DCFF-D209-39EBFA99A58F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_estado_tarjeta" id="9AD2E081-62AE-7EFC-BBE9-D4DFDD6EED09">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-12 17:09:05 UTC</createdTime>
+<ownerDesignName>base_datos</ownerDesignName>
+<engineerTo>
+<item key="8B2F46B9-F884-DCFF-D209-39EBFA99A58F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_estado_tarjeta1" id="CC00115E-8256-77CA-90C1-F81014597760">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-12 17:10:17 UTC</createdTime>
+<generatorID>EADE032E-32E5-418C-422F-4FD39D9F6430</generatorID>
+<ownerDesignName>base_datos</ownerDesignName>
+<engineerTo>
+<item key="8B2F46B9-F884-DCFF-D209-39EBFA99A58F" value="true"/>
+</engineerTo>
+<referedAttribute>CB70E08D-EEC7-FB53-AA44-3491EF46D948</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="68626D3F-7198-6F7E-67A0-C9AEBA5675A0" name="TARJETA_CREDITO PK">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-12 17:05:23 UTC</createdTime>
+<ownerDesignName>base_datos</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="8B2F46B9-F884-DCFF-D209-39EBFA99A58F" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>2C275457-EF9B-E69A-E0FA-1C0FA175B5BD</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

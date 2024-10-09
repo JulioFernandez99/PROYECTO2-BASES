@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_10" directorySegmentName="seg_0" id="41F84DD6-1F95-4084-8BAC-5BD35C7D5E52">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-12 06:52:26 UTC</createdTime>
+<ownerDesignName>base_datos</ownerDesignName>
+<engineerTo>
+<item key="8B2F46B9-F884-DCFF-D209-39EBFA99A58F" value="true"/>
+</engineerTo>
+<sourcePk>D693830D-826B-C332-CDFC-398A956A04F4</sourcePk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>8C1D4D77-3A04-201E-B4FB-76623E788D09</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>B32CFB79-182B-8448-A6A3-ACB86999D0CC</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

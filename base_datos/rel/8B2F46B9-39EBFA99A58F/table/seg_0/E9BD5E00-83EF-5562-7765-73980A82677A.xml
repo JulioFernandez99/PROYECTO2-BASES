@@ -1,0 +1,49 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E9BD5E00-83EF-5562-7765-73980A82677A" name="ESTADO_PRESTAMO">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-12 18:01:32 UTC</createdTime>
+<generatorID>196914D8-FF9C-8DC4-7729-5414AE92FFE9</generatorID>
+<ownerDesignName>base_datos</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_estado_prestamo" id="EB9385BF-89A8-12D1-8779-9ACC1B0EF5D2">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-12 18:01:32 UTC</createdTime>
+<generatorID>C7D4FB8E-F30D-62B5-CC1B-B79A1C8A1A2A</generatorID>
+<ownerDesignName>base_datos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="estado_prestamo" id="F80FFED9-47F2-969E-1B1E-A0EEAF75A528">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-12 18:01:32 UTC</createdTime>
+<generatorID>96B0845B-F746-3BBA-81DB-6CCB87DA2ED7</generatorID>
+<ownerDesignName>base_datos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25 CHAR</dataTypeSize>
+<ownDataTypeParameters>25 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="87EE2F38-EAA7-2F06-5834-80F8EF2A4990" name="ESTADO_PRESTAMO_PK">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-12 18:01:32 UTC</createdTime>
+<generatorID>9111309E-D60F-AE39-0EF5-6504F8924BE4</generatorID>
+<ownerDesignName>base_datos</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EB9385BF-89A8-12D1-8779-9ACC1B0EF5D2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
