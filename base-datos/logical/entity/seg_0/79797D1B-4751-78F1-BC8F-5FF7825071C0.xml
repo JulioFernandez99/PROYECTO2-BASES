@@ -1,0 +1,58 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="79797D1B-4751-78F1-BC8F-5FF7825071C0" name="TIPO_CARTERA">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-10-09 20:51:48 UTC</createdTime>
+<ownerDesignName>base-datos</ownerDesignName>
+<engineerTo>
+<item key="8B2F46B9-F884-DCFF-D209-39EBFA99A58F" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_tipo_cartera" id="F151B8BB-4086-6653-82BD-6B3BF198F3F9">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-10-09 21:11:41 UTC</createdTime>
+<ownerDesignName>base-datos</ownerDesignName>
+<engineerTo>
+<item key="8B2F46B9-F884-DCFF-D209-39EBFA99A58F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tipo_cartera" id="F772913B-286A-CD2E-D35E-36E8B391D2D9">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-10-09 21:05:38 UTC</createdTime>
+<ownerDesignName>base-datos</ownerDesignName>
+<engineerTo>
+<item key="8B2F46B9-F884-DCFF-D209-39EBFA99A58F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="0232329D-E0B1-EDEE-8ED5-4449B733C4E6" name="TIPO_CARTERA PK">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-10-09 21:12:05 UTC</createdTime>
+<ownerDesignName>base-datos</ownerDesignName>
+<engineerTo>
+<item key="8B2F46B9-F884-DCFF-D209-39EBFA99A58F" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>F151B8BB-4086-6653-82BD-6B3BF198F3F9</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

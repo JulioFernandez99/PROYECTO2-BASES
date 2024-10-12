@@ -1,0 +1,155 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="642626AB-A2C5-FE82-210E-D33009427847" name="PRESTAMO">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-12 06:23:52 UTC</createdTime>
+<ownerDesignName>base-datos</ownerDesignName>
+<engineerTo>
+<item key="8B2F46B9-F884-DCFF-D209-39EBFA99A58F" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_prestamo" id="6D2F1006-0FB7-8FB7-E744-558B692B74DF">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-12 17:11:24 UTC</createdTime>
+<ownerDesignName>base-datos</ownerDesignName>
+<engineerTo>
+<item key="8B2F46B9-F884-DCFF-D209-39EBFA99A58F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_cuenta" id="CA8E39DF-4304-A0C7-60A3-B8BD70ABD558">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-12 16:54:53 UTC</createdTime>
+<generatorID>1F4D5AD1-B4B2-70F2-170E-F6A28D64CBA1</generatorID>
+<ownerDesignName>base-datos</ownerDesignName>
+<engineerTo>
+<item key="8B2F46B9-F884-DCFF-D209-39EBFA99A58F" value="true"/>
+</engineerTo>
+<referedAttribute>6A183902-F0E2-7BEE-3C9C-D5EAB2104497</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_agencia" id="5B2DD58E-0B5D-7413-9B2A-7085EE76DB73">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-12 16:58:43 UTC</createdTime>
+<generatorID>88FBA61A-E085-FC1E-8700-A2EB86E6DCF5</generatorID>
+<ownerDesignName>base-datos</ownerDesignName>
+<engineerTo>
+<item key="8B2F46B9-F884-DCFF-D209-39EBFA99A58F" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>E31BFE19-F517-2D19-2581-9BCE5AA5D623</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="monto_prestamo" id="6CCBA248-E5BD-3549-D837-E5C7F66C14AC">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-12 17:11:49 UTC</createdTime>
+<ownerDesignName>base-datos</ownerDesignName>
+<engineerTo>
+<item key="8B2F46B9-F884-DCFF-D209-39EBFA99A58F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>15</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,15,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tasa_interes" id="4A21A537-4BE6-883E-DCE3-D7582FC5823B">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-12 17:12:26 UTC</createdTime>
+<ownerDesignName>base-datos</ownerDesignName>
+<engineerTo>
+<item key="8B2F46B9-F884-DCFF-D209-39EBFA99A58F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,2,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fecha_desembolso" id="8C7D4D60-C999-DA20-7071-02272A12F65E">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-12 17:12:49 UTC</createdTime>
+<ownerDesignName>base-datos</ownerDesignName>
+<engineerTo>
+<item key="8B2F46B9-F884-DCFF-D209-39EBFA99A58F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fecha_vencimiento" id="646C6EDC-0D11-29FE-D510-1AA74A35A8C6">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-12 17:13:13 UTC</createdTime>
+<ownerDesignName>base-datos</ownerDesignName>
+<engineerTo>
+<item key="8B2F46B9-F884-DCFF-D209-39EBFA99A58F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="saldo_pendiente" id="FC6A474A-FC1E-8CAD-2D31-6653EB659D3E">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-12 17:13:35 UTC</createdTime>
+<ownerDesignName>base-datos</ownerDesignName>
+<engineerTo>
+<item key="8B2F46B9-F884-DCFF-D209-39EBFA99A58F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>15</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,15,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_estado_prestamo" id="439E4BB9-9BFF-6168-90A3-868F62742035">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-12 17:15:49 UTC</createdTime>
+<generatorID>327D04F5-5CBB-79F1-EA26-44D3BC140B8E</generatorID>
+<ownerDesignName>base-datos</ownerDesignName>
+<engineerTo>
+<item key="8B2F46B9-F884-DCFF-D209-39EBFA99A58F" value="true"/>
+</engineerTo>
+<referedAttribute>C7D4FB8E-F30D-62B5-CC1B-B79A1C8A1A2A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="8247DC46-C000-966C-CBA1-85DFB7041F80" name="PRESTAMO PK">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-12 17:11:35 UTC</createdTime>
+<ownerDesignName>base-datos</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="8B2F46B9-F884-DCFF-D209-39EBFA99A58F" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>6D2F1006-0FB7-8FB7-E744-558B692B74DF</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

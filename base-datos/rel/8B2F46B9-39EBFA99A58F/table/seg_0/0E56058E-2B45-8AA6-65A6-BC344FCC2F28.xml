@@ -1,0 +1,249 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0E56058E-2B45-8AA6-65A6-BC344FCC2F28" name="TRANSACCION">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-12 18:01:32 UTC</createdTime>
+<generatorID>E8C3B6D1-15E8-6D83-10F5-508B76F7B098</generatorID>
+<ownerDesignName>base-datos</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_transaccion" id="2C5F1454-6B76-0B78-239F-216CDE0A43E9">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-12 18:01:32 UTC</createdTime>
+<generatorID>514C90BB-A12F-C05D-9AFA-B2562BF44A9A</generatorID>
+<ownerDesignName>base-datos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CLIENTE_id_cliente" id="CB370359-8294-DCCF-A3C7-63A2EBA562EB">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-12 18:01:32 UTC</createdTime>
+<generatorID>96919828-3855-C219-5A52-B6E61CF709D3</generatorID>
+<ownerDesignName>base-datos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7F75BAAF-C03B-7080-4AEC-48319AAFE91C" referredColumn="7B527CDA-9E29-6B03-185C-8FFABDA81B98"/>
+</associations>
+</Column>
+<Column name="CUENTA_id_cuenta" id="0DDA1A86-888C-67F1-3F60-0B9EDC382091">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-12 18:01:32 UTC</createdTime>
+<generatorID>085E2253-AEC5-F616-7B5A-9737BCA133AA</generatorID>
+<ownerDesignName>base-datos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7D72F2DF-A764-4094-5DB9-2C6140755CAE" referredColumn="BE0EF741-F330-852B-FB41-45D716D10367"/>
+</associations>
+</Column>
+<Column name="AGENCIA_id_agencia" id="722EFE79-C071-80C4-A470-BC4A6244539E">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-12 18:01:32 UTC</createdTime>
+<generatorID>BCCC2AD0-9597-FC5C-6784-ECA18483E322</generatorID>
+<ownerDesignName>base-datos</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="185AF764-DF7D-A3D0-B12D-33D28C6F45B4" referredColumn="554CA1A7-8FA0-4B60-873B-81E4894E4388"/>
+</associations>
+</Column>
+<Column name="PRESTAMO_id_prestamo" id="A47698D4-3538-C848-7B37-697668B04FE5">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-12 18:01:32 UTC</createdTime>
+<generatorID>07CC0E1B-675F-6A19-24BA-474B572366A5</generatorID>
+<ownerDesignName>base-datos</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="734218BE-DACB-3F6E-69C5-0F4D2369C701" referredColumn="5D100C7D-DAA9-5739-D4C0-AF4AD4F0C0E9"/>
+</associations>
+</Column>
+<Column name="cuenta_origen" id="86E67FCF-5F0B-1A9F-BFC2-D8AD33CC9B5A">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-12 18:01:32 UTC</createdTime>
+<generatorID>BADD64CC-5E10-25FD-C97D-72F9E7B70AF9</generatorID>
+<ownerDesignName>base-datos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cuenta_destino" id="7538E096-46A0-5EAF-B03B-631019301860">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-12 18:01:32 UTC</createdTime>
+<generatorID>A6274BAB-A568-17A9-86A5-900E9DDE5E16</generatorID>
+<ownerDesignName>base-datos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TIPO_TRANSACCION_id_tipo_transaccion" id="501993EB-35DC-F729-5814-0D976E897A24">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-12 18:01:32 UTC</createdTime>
+<generatorID>0B27B5B3-B0DF-B87F-7D01-9BE3ABECA439</generatorID>
+<ownerDesignName>base-datos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F58D317A-E3DC-6742-40D6-5901DE625081" referredColumn="0377D5D3-79A2-63A7-CF7B-D0595F9A262E"/>
+</associations>
+</Column>
+<Column name="monto" id="E20D998E-37AA-8783-5B45-3898D3173C9D">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-12 18:01:32 UTC</createdTime>
+<generatorID>64911B98-A744-4748-EDCB-E8202A4654AB</generatorID>
+<ownerDesignName>base-datos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>15</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,15,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha" id="559FDC01-B1BE-3A0E-450A-3832CD428EC0">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-12 18:01:32 UTC</createdTime>
+<generatorID>4F4B3057-2A24-9BEE-9AB0-272459D8C4A9</generatorID>
+<ownerDesignName>base-datos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="hora" id="27FD3608-5608-E7E7-B8AF-09B806AE2BEA">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-12 18:01:32 UTC</createdTime>
+<generatorID>ADBD3B3A-7A6C-AF93-810F-FA2431D0EF40</generatorID>
+<ownerDesignName>base-datos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT014</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descripcion" id="37B0519B-1B21-6C11-DB41-07A512F96AD0">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-12 18:01:32 UTC</createdTime>
+<generatorID>37AEBED2-4CF5-F123-DCA6-A52F22565C59</generatorID>
+<ownerDesignName>base-datos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_agencia_1" id="EA5CE314-B23A-686A-360B-75479203ECE3">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-12 18:01:32 UTC</createdTime>
+<generatorID>2CEA86CE-80B2-CAA3-B8EE-5662CCD15102</generatorID>
+<ownerDesignName>base-datos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CD09B6EA-535C-4D10-6B0E-C71BC7474B6C" name="TRANSACCION_PK">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-12 18:01:32 UTC</createdTime>
+<generatorID>96F3A92A-1A14-91A3-DEB5-5548B4D4ADD3</generatorID>
+<ownerDesignName>base-datos</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2C5F1454-6B76-0B78-239F-216CDE0A43E9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="63DBDC6E-01C9-F5F5-3373-E9B404ABAAD8" name="TRANSACCION_PRESTAMO_FK">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-12 18:01:32 UTC</createdTime>
+<generatorID>D54DFEEE-D7FF-DE9F-D6E0-6BEA9FFCD3FF</generatorID>
+<ownerDesignName>base-datos</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A47698D4-3538-C848-7B37-697668B04FE5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CEDA2A18-7131-990B-A9B8-952F9F765129" name="TRANSACCION_TIPO_TRANSACCION_FK">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-12 18:01:32 UTC</createdTime>
+<generatorID>56F3BCC5-991A-1993-DD24-2C21216BF2AF</generatorID>
+<ownerDesignName>base-datos</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="501993EB-35DC-F729-5814-0D976E897A24"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E8310823-A6DA-729B-2FFD-BC21AEF82D02" name="TRANSACCION_AGENCIA_FK">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-12 18:01:32 UTC</createdTime>
+<generatorID>F674123E-6803-9C24-4BF7-E0A2FCA9E53B</generatorID>
+<ownerDesignName>base-datos</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="722EFE79-C071-80C4-A470-BC4A6244539E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A1C9E657-A956-9EEF-6263-F199FB341176" name="TRANSACCION_CLIENTE_FK">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-12 18:01:32 UTC</createdTime>
+<generatorID>5AFB7D0B-6F27-C714-134E-0CC8EC7EC43A</generatorID>
+<ownerDesignName>base-datos</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CB370359-8294-DCCF-A3C7-63A2EBA562EB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2618CC67-6FC0-570B-2DFF-F287FC55960B" name="TRANSACCION_CUENTA_FK">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-12 18:01:32 UTC</createdTime>
+<generatorID>35F2E00B-BF29-70B1-2D62-20A184EC2533</generatorID>
+<ownerDesignName>base-datos</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0DDA1A86-888C-67F1-3F60-0B9EDC382091"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

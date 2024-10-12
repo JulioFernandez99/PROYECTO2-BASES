@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="7BBDDF37-ED19-7578-D502-6E58CE80F614" containerWithKeyObject="76213120-46C8-7E06-682A-1DAF70ED7D93" localFKIndex="A1C9C6BB-B8E4-0493-A582-9525AEB94854" name="PRESTAMO_AGENCIA_FK">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-12 18:01:32 UTC</createdTime>
+<generatorID>88FBA61A-E085-FC1E-8700-A2EB86E6DCF5</generatorID>
+<ownerDesignName>base-datos</ownerDesignName>
+<referredTableLongName>AGENCIA</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>F375492C-AB31-0DA3-32F2-B137700B3B4B</referredTableID>
+<keyObject>C3137F4B-5148-F684-4D80-8B9C47A91F34</keyObject>
+<referredKeyID>C3137F4B-5148-F684-4D80-8B9C47A91F34</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>id_agencia</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

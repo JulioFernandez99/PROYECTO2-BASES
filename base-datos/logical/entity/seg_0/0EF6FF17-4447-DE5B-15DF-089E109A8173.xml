@@ -1,0 +1,71 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="0EF6FF17-4447-DE5B-15DF-089E109A8173" name="TARJETA_DEBITO">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-10-12 09:48:27 UTC</createdTime>
+<ownerDesignName>base-datos</ownerDesignName>
+<engineerTo>
+<item key="8B2F46B9-F884-DCFF-D209-39EBFA99A58F" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_tarjeta_db" id="F27D5091-D0A0-6D3F-9192-D8427A6DC203">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-10-12 09:55:05 UTC</createdTime>
+<ownerDesignName>base-datos</ownerDesignName>
+<engineerTo>
+<item key="8B2F46B9-F884-DCFF-D209-39EBFA99A58F" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_cliente" id="1D626929-FD1C-B7A6-937D-DEDA68240B67">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-10-12 09:55:39 UTC</createdTime>
+<generatorID>1549E2BC-3385-4903-1CC5-11B47B0B385E</generatorID>
+<ownerDesignName>base-datos</ownerDesignName>
+<engineerTo>
+<item key="8B2F46B9-F884-DCFF-D209-39EBFA99A58F" value="true"/>
+</engineerTo>
+<referedAttribute>15A02695-0D8A-7BF3-BEB6-F4C380019975</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_estado_tarjeta_db" id="2666FBB6-8088-D461-DAEE-61A7818BCB8C">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-10-12 10:00:48 UTC</createdTime>
+<generatorID>D896E94B-7876-F461-3E31-4A77CC3F66B6</generatorID>
+<ownerDesignName>base-datos</ownerDesignName>
+<engineerTo>
+<item key="8B2F46B9-F884-DCFF-D209-39EBFA99A58F" value="true"/>
+</engineerTo>
+<referedAttribute>143AD35A-AA25-9810-0ADC-92FF3A9820F6</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="602D3BD2-722B-05BA-ABA7-406E5378202D" name="TARJETA_DEBITO PK">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-10-12 09:55:39 UTC</createdTime>
+<ownerDesignName>base-datos</ownerDesignName>
+<engineerTo>
+<item key="8B2F46B9-F884-DCFF-D209-39EBFA99A58F" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>1D626929-FD1C-B7A6-937D-DEDA68240B67</attributeRef>
+<attributeRef>F27D5091-D0A0-6D3F-9192-D8427A6DC203</attributeRef>
+<attributeRef>2666FBB6-8088-D461-DAEE-61A7818BCB8C</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

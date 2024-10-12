@@ -1,0 +1,125 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="40F35172-BBA2-4677-A01B-73E565715F75" name="CUENTA">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-12 18:01:32 UTC</createdTime>
+<generatorID>E19DA132-314C-9587-E3CA-C0D472E36C8C</generatorID>
+<ownerDesignName>base-datos</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CLIENTE_id_cliente" id="5767FEDC-14D0-E2FA-DADF-44187A90723D">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-12 18:01:32 UTC</createdTime>
+<generatorID>73BFCCC5-1372-CB11-FEDF-47322B34356E</generatorID>
+<ownerDesignName>base-datos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C940AF27-2B41-2143-4BBE-05B79B4991A4" referredColumn="7B527CDA-9E29-6B03-185C-8FFABDA81B98"/>
+</associations>
+</Column>
+<Column name="id_cuenta" id="BE0EF741-F330-852B-FB41-45D716D10367">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-12 18:01:32 UTC</createdTime>
+<generatorID>6A183902-F0E2-7BEE-3C9C-D5EAB2104497</generatorID>
+<ownerDesignName>base-datos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_tipo_cuenta" id="9D392229-2FBF-A3DC-D7D8-F0F8A92F37CC">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-12 18:01:32 UTC</createdTime>
+<generatorID>F083BD0C-CFC3-2527-C792-5C4D5AE543EE</generatorID>
+<ownerDesignName>base-datos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="num_cuenta" id="8A528A9A-C197-0879-908A-EA571637F2BB">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-12 18:01:32 UTC</createdTime>
+<generatorID>427E6972-4E70-F2EA-4ADC-2E1D406CCB43</generatorID>
+<ownerDesignName>base-datos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="saldo" id="5D4A7B93-5F0C-BAD9-7F90-5A279445A076">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-12 18:01:32 UTC</createdTime>
+<generatorID>237D91DC-3E7B-1283-FDDF-FBF52A1F3CA5</generatorID>
+<ownerDesignName>base-datos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>15</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,15,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AGENCIA_id_agencia" id="DF7D6146-444B-B677-E7AD-C8DB4BFCB774">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-12 18:01:32 UTC</createdTime>
+<generatorID>B04FF50E-A205-E234-7C3A-965CED35D6F9</generatorID>
+<ownerDesignName>base-datos</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F7E5AF08-B658-78CB-6619-0FF529AB8B03" referredColumn="554CA1A7-8FA0-4B60-873B-81E4894E4388"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C6135588-D47C-BA33-140F-70F3D4E288D4" name="CUENTA_PK">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-12 18:01:32 UTC</createdTime>
+<generatorID>44908C78-C307-AC4A-3ACF-80870E4E8394</generatorID>
+<ownerDesignName>base-datos</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BE0EF741-F330-852B-FB41-45D716D10367"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9F570417-A8E8-CCB7-3692-4FB0583988F1" name="CUENTA_CLIENTE_FK">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-12 18:01:32 UTC</createdTime>
+<generatorID>59AF4864-FE25-AF37-7388-359CDF64AE14</generatorID>
+<ownerDesignName>base-datos</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5767FEDC-14D0-E2FA-DADF-44187A90723D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="39B9FE02-3363-A2A7-4030-FA7585F26037" name="CUENTA_AGENCIA_FK">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-12 18:01:32 UTC</createdTime>
+<generatorID>09E72A00-C667-8B19-F0FB-22D62423C05C</generatorID>
+<ownerDesignName>base-datos</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DF7D6146-444B-B677-E7AD-C8DB4BFCB774"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

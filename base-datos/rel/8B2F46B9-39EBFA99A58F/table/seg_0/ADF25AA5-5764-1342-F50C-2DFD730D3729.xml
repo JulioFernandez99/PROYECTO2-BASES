@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="ADF25AA5-5764-1342-F50C-2DFD730D3729" name="TIPO_CUENTA">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-12 18:01:32 UTC</createdTime>
+<generatorID>55EFCD08-028D-E49F-360A-D39127B9801E</generatorID>
+<ownerDesignName>base-datos</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CUENTA_id_cuenta" id="A15BD993-BBA6-D00D-8AF6-8D455746DAC6">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-12 18:01:32 UTC</createdTime>
+<generatorID>24D02071-833D-3113-60DF-456D988F6DA5</generatorID>
+<ownerDesignName>base-datos</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CA908DF8-C828-44B8-EC3B-A9C545F64CB0" referredColumn="BE0EF741-F330-852B-FB41-45D716D10367"/>
+</associations>
+</Column>
+<Column name="id_tipo_cuenta" id="C06FAA54-7D55-3EE4-F592-F5121D0A1BDA">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-12 18:01:32 UTC</createdTime>
+<generatorID>A5E1B39F-5CC7-538D-142F-BC927FA59A59</generatorID>
+<ownerDesignName>base-datos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tipo_cuenta" id="74AF0373-2DA8-7791-F820-8EBF9162F978">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-12 18:01:32 UTC</createdTime>
+<generatorID>45B6BA00-2B78-B344-524A-22136C756D39</generatorID>
+<ownerDesignName>base-datos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="69CD488A-8867-4637-7CA2-66BF83B415F8" name="TIPO_CUENTA_PK">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-12 18:01:32 UTC</createdTime>
+<generatorID>1B7B2D62-82B9-F774-4E33-205EDA28E82F</generatorID>
+<ownerDesignName>base-datos</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C06FAA54-7D55-3EE4-F592-F5121D0A1BDA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C4BFCEA2-92A3-069F-CE30-C0721AB9169F" name="TIPO_CUENTA_CUENTA_FK">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-12 18:01:32 UTC</createdTime>
+<generatorID>7013F2E2-597D-B202-2EEB-34FA55302166</generatorID>
+<ownerDesignName>base-datos</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A15BD993-BBA6-D00D-8AF6-8D455746DAC6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

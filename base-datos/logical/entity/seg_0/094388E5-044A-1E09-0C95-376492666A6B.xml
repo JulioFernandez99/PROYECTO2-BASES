@@ -1,0 +1,87 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="094388E5-044A-1E09-0C95-376492666A6B" name="CARTERA_CLIENTES">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-10-09 20:51:13 UTC</createdTime>
+<ownerDesignName>base-datos</ownerDesignName>
+<engineerTo>
+<item key="8B2F46B9-F884-DCFF-D209-39EBFA99A58F" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_cartera" id="1CF09071-D1A9-CBD0-65B6-394495F7B539">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-10-09 21:02:31 UTC</createdTime>
+<ownerDesignName>base-datos</ownerDesignName>
+<engineerTo>
+<item key="8B2F46B9-F884-DCFF-D209-39EBFA99A58F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_tipo_cartera1" id="EF8EFE82-9B5F-3BA5-8A54-2CEACA8028B4">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-10-09 21:17:49 UTC</createdTime>
+<generatorID>572D92FB-12A4-D5E3-28E3-6A7E9A019359</generatorID>
+<ownerDesignName>base-datos</ownerDesignName>
+<engineerTo>
+<item key="8B2F46B9-F884-DCFF-D209-39EBFA99A58F" value="true"/>
+</engineerTo>
+<referedAttribute>F151B8BB-4086-6653-82BD-6B3BF198F3F9</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_agencia" id="2E792C71-4553-AB30-BED6-DE714F624B90">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-10-09 21:20:26 UTC</createdTime>
+<generatorID>4F0C8882-89C3-35A1-D172-769A03E4A928</generatorID>
+<ownerDesignName>base-datos</ownerDesignName>
+<engineerTo>
+<item key="8B2F46B9-F884-DCFF-D209-39EBFA99A58F" value="true"/>
+</engineerTo>
+<referedAttribute>E31BFE19-F517-2D19-2581-9BCE5AA5D623</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_cliente" id="928B86D6-F1B4-CFFD-F22A-65FBD7CF2A0B">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-10-09 21:24:33 UTC</createdTime>
+<generatorID>095369AB-EF37-4E57-8BBE-7316A6632C50</generatorID>
+<ownerDesignName>base-datos</ownerDesignName>
+<engineerTo>
+<item key="8B2F46B9-F884-DCFF-D209-39EBFA99A58F" value="true"/>
+</engineerTo>
+<referedAttribute>15A02695-0D8A-7BF3-BEB6-F4C380019975</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="CA117876-8F87-CEB8-4953-8BA32735C7FE" name="CARTERA_CLIENTES PK">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-10-09 21:02:52 UTC</createdTime>
+<ownerDesignName>base-datos</ownerDesignName>
+<engineerTo>
+<item key="8B2F46B9-F884-DCFF-D209-39EBFA99A58F" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>1CF09071-D1A9-CBD0-65B6-394495F7B539</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

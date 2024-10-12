@@ -1,0 +1,144 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B32CFB79-182B-8448-A6A3-ACB86999D0CC" name="EMPLEADO">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-12 06:23:57 UTC</createdTime>
+<ownerDesignName>base-datos</ownerDesignName>
+<engineerTo>
+<item key="8B2F46B9-F884-DCFF-D209-39EBFA99A58F" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_empleado" id="F7F9783C-C88C-67E6-B915-B0C9F7FBB3D6">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-12 17:16:25 UTC</createdTime>
+<ownerDesignName>base-datos</ownerDesignName>
+<engineerTo>
+<item key="8B2F46B9-F884-DCFF-D209-39EBFA99A58F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_agencia" id="38FD7F3F-7445-C0C7-92A8-C8BD2160BEB1">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-12 16:58:43 UTC</createdTime>
+<generatorID>41F84DD6-1F95-4084-8BAC-5BD35C7D5E52</generatorID>
+<ownerDesignName>base-datos</ownerDesignName>
+<engineerTo>
+<item key="8B2F46B9-F884-DCFF-D209-39EBFA99A58F" value="true"/>
+</engineerTo>
+<referedAttribute>E31BFE19-F517-2D19-2581-9BCE5AA5D623</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombre" id="08397ECB-0A59-63F8-FF56-688846AD7247">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-12 17:16:37 UTC</createdTime>
+<ownerDesignName>base-datos</ownerDesignName>
+<engineerTo>
+<item key="8B2F46B9-F884-DCFF-D209-39EBFA99A58F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="telefono" id="51505977-6F8C-A0E0-D74C-06D4D435651B">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-12 17:18:19 UTC</createdTime>
+<ownerDesignName>base-datos</ownerDesignName>
+<engineerTo>
+<item key="8B2F46B9-F884-DCFF-D209-39EBFA99A58F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<ownDataTypeParameters>30 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_rol" id="E13F3C47-117E-E240-71F6-E8B697D5EEF8">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-10-09 21:45:46 UTC</createdTime>
+<generatorID>EA327964-8DD3-75B8-4AF2-8BB2D1C70A01</generatorID>
+<ownerDesignName>base-datos</ownerDesignName>
+<engineerTo>
+<item key="8B2F46B9-F884-DCFF-D209-39EBFA99A58F" value="true"/>
+</engineerTo>
+<referedAttribute>4111F061-F6B8-C8DE-D9DC-568CBB099F71</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="salario" id="3AF9013B-A349-7F92-3555-63770CA2E960">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-10-12 09:39:59 UTC</createdTime>
+<ownerDesignName>base-datos</ownerDesignName>
+<engineerTo>
+<item key="8B2F46B9-F884-DCFF-D209-39EBFA99A58F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>15</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,15,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_planilla" id="05D49D2B-F273-AB24-4B24-CBAC62A89BC1">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-10-12 09:41:47 UTC</createdTime>
+<generatorID>D70360F7-B018-5DC3-57DB-45A402E6EC72</generatorID>
+<ownerDesignName>base-datos</ownerDesignName>
+<engineerTo>
+<item key="8B2F46B9-F884-DCFF-D209-39EBFA99A58F" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>F811CAAD-2E35-0180-B1C1-BB171E501F4B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_encargado" id="A77E8A1D-5B4B-73EC-1DDC-0AEA2E13A258">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-10-12 09:46:45 UTC</createdTime>
+<generatorID>334887BD-39C4-1B30-EA49-3724919DA5FF</generatorID>
+<ownerDesignName>base-datos</ownerDesignName>
+<engineerTo>
+<item key="8B2F46B9-F884-DCFF-D209-39EBFA99A58F" value="true"/>
+</engineerTo>
+<referedAttribute>4F86813F-53A4-3889-CAA8-6641C0638D0F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="B49EBE9D-7F54-BD51-1100-15A0A2205ACA" name="EMPLEADO PK">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-09-12 17:16:33 UTC</createdTime>
+<ownerDesignName>base-datos</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="8B2F46B9-F884-DCFF-D209-39EBFA99A58F" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>F7F9783C-C88C-67E6-B915-B0C9F7FBB3D6</attributeRef>
+<attributeRef>E13F3C47-117E-E240-71F6-E8B697D5EEF8</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
