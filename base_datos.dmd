@@ -1,8 +1,0 @@
-<?xml version = '1.0' encoding = 'UTF-8'?>
-<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="base_datos" id="C6018556-87A6-E13B-FE16-D050D57B229E" version="3.5">
-<createdBy>Lenovo</createdBy>
-<createdTime>2024-09-12 06:19:12 UTC</createdTime>
-<ownerDesignName>db-oficial</ownerDesignName>
-<capitalNames>false</capitalNames>
-<designId>C6018556-87A6-E13B-FE16-D050D57B229E</designId>
-</OSDM_Design>
