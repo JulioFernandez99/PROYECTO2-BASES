@@ -95,6 +95,20 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="id_boveda" id="EBD07DC9-3D14-1AF6-6B53-C2E35AB9C04C">
+<createdBy>luismonroy</createdBy>
+<createdTime>2024-10-17 03:05:32 UTC</createdTime>
+<generatorID>32B633E9-DE59-404C-9C47-37AAF37FEE8A</generatorID>
+<ownerDesignName>base-datos</ownerDesignName>
+<engineerTo>
+<item key="8B2F46B9-F884-DCFF-D209-39EBFA99A58F" value="true"/>
+</engineerTo>
+<referedAttribute>08409CDE-EA17-CCFE-CF04-7A465EBF4FF8</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="D693830D-826B-C332-CDFC-398A956A04F4" name="AGENCIA PK">

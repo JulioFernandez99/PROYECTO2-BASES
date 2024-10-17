@@ -110,15 +110,31 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="id_encargado" id="A77E8A1D-5B4B-73EC-1DDC-0AEA2E13A258">
-<createdBy>Lenovo</createdBy>
-<createdTime>2024-10-12 09:46:45 UTC</createdTime>
-<generatorID>334887BD-39C4-1B30-EA49-3724919DA5FF</generatorID>
+<Attribute name="id_encargado" id="273543E4-9B1A-84B7-976A-F830FAAD61D1">
+<createdBy>luismonroy</createdBy>
+<createdTime>2024-10-17 03:12:05 UTC</createdTime>
+<generatorID>C9E628E5-DF30-727B-632B-BB85611A5928</generatorID>
 <ownerDesignName>base-datos</ownerDesignName>
 <engineerTo>
 <item key="8B2F46B9-F884-DCFF-D209-39EBFA99A58F" value="true"/>
 </engineerTo>
-<referedAttribute>4F86813F-53A4-3889-CAA8-6641C0638D0F</referedAttribute>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>F7F9783C-C88C-67E6-B915-B0C9F7FBB3D6</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_rol1" id="BB879ADB-EA92-B5B0-4524-40FDC2FC4C02">
+<createdBy>luismonroy</createdBy>
+<createdTime>2024-10-17 03:12:05 UTC</createdTime>
+<generatorID>C9E628E5-DF30-727B-632B-BB85611A5928</generatorID>
+<ownerDesignName>base-datos</ownerDesignName>
+<engineerTo>
+<item key="8B2F46B9-F884-DCFF-D209-39EBFA99A58F" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>E13F3C47-117E-E240-71F6-E8B697D5EEF8</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>

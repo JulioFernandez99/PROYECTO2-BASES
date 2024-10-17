@@ -40,20 +40,6 @@
 <dataTypeSize>50 CHAR</dataTypeSize>
 <ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="id_boveda" id="1B41EE39-586E-71A3-FDB3-FD3CED8C8742">
-<createdBy>Lenovo</createdBy>
-<createdTime>2024-10-09 22:16:13 UTC</createdTime>
-<generatorID>9F81EB8E-1ED7-75F1-AB4B-AD2BFC4C222F</generatorID>
-<ownerDesignName>base-datos</ownerDesignName>
-<engineerTo>
-<item key="8B2F46B9-F884-DCFF-D209-39EBFA99A58F" value="true"/>
-</engineerTo>
-<referedAttribute>08409CDE-EA17-CCFE-CF04-7A465EBF4FF8</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="4955E9DF-1B43-C8A1-0533-7BB4F47585E3" name="TIPO_AGENCIA PK">
