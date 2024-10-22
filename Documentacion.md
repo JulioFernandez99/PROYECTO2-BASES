@@ -1,9 +1,12 @@
 
+## PROYECTO 2 - SISTEMA BANCARIO JP MORGAN
+## GRUPO 9
 | Nombre | Carnet  |
 |------------|------------|
-| Fila 1, C1 | Fila 1, C2 | 
-| Fila 2, C1 | Fila 2, C2 | 
-| Fila 3, C1 | Fila 3, C2 | 
+| Kevin Estuardo Del Cid Quezada | 202103252 | 
+| Julio Fernandez | Al rato los pongo xd | 
+| Eduardo | ... | 
 
-## PROYECTO 1 - SISTEMA BANCARIO
 ## HERRAMIENTAS
+- **DATA MODELER:** Para crear el diagrama fisico y logico.
+- **SQL:** Para realizar las tablas y los scripts necesarios.
