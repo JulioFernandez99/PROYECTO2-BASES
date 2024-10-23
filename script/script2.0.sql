@@ -542,6 +542,52 @@ CREATE TABLE transaccion (
     fecha_actualizacion  TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL
 );
 
+---------------------------------------------------
+
+CREATE TABLE transacciones_prestamo (
+    prestamo_id_prestamo    INTEGER NOT NULL,
+    id_transaccion_prestamo INTEGER NOT NULL,
+    fecha                   DATE NOT NULL,
+    hora                    DATE NOT NULL,
+    descripcion             VARCHAR2(255 CHAR) NOT NULL
+);
+
+ALTER TABLE transacciones_prestamo ADD CONSTRAINT transacciones_prestamo_pk PRIMARY KEY ( prestamo_id_prestamo,
+                                                                                          id_transaccion_prestamo );
+
+CREATE TABLE transacciones_tarjeta_cr (
+    tarjeta_credito_id_tarjeta_cr INTEGER NOT NULL,
+    id_transaccion_tarjeta_cr     INTEGER NOT NULL,
+    fecha                         DATE NOT NULL,
+    hora                          DATE NOT NULL,
+    descripcion                   VARCHAR2(255 CHAR) NOT NULL,
+    id_cliente                    INTEGER NOT NULL
+);
+
+ALTER TABLE transacciones_tarjeta_cr
+    ADD CONSTRAINT transacciones_tarjeta_cr_pk PRIMARY KEY ( tarjeta_credito_id_tarjeta_cr,
+                                                             id_cliente,
+                                                             id_transaccion_tarjeta_cr );
+
+CREATE TABLE transacciones_tarjeta_db (
+    id_transaccion_db                   INTEGER NOT NULL, 
+    tdebito_cliente_id_cliente   INTEGER NOT NULL,
+    tarjeta_debito_id_tarjeta_db        INTEGER NOT NULL,
+    fecha                               DATE NOT NULL,
+    hora                                DATE NOT NULL,
+    descripcion                         VARCHAR2(255 CHAR), 
+
+    tdebito_id_estado_tarjeta_db INTEGER NOT NULL
+);
+
+ALTER TABLE transacciones_tarjeta_db
+    ADD CONSTRAINT transacciones_tarjeta_db_pk PRIMARY KEY ( tdebito_cliente_id_cliente,
+                                                             tarjeta_debito_id_tarjeta_db,
+                                                             tdebito_id_estado_tarjeta_db );
+
+
+---------------------------------------------------
+
 -- Agregar primary key a transaccion
 ALTER TABLE transaccion ADD CONSTRAINT transaccion_pk PRIMARY KEY ( id_transaccion );
 
