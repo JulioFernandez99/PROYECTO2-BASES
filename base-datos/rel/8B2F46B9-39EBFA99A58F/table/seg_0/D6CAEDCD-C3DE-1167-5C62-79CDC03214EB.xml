@@ -1,0 +1,111 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D6CAEDCD-C3DE-1167-5C62-79CDC03214EB" name="TRANSACCIONES_TARJETA_CR">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-10-24 09:47:28 UTC</createdTime>
+<generatorID>4B9B03E8-D907-9EE0-D19F-55A3DBA2B617</generatorID>
+<ownerDesignName>base-datos</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="TARJETA_CREDITO_id_tarjeta_cr" id="F312F876-73CF-84E3-DF95-58BE8E10ABFB">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-10-24 09:47:28 UTC</createdTime>
+<generatorID>5CD061AB-F636-CA37-D9AE-A921E65B919D</generatorID>
+<ownerDesignName>base-datos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="937E2767-D7CA-6682-A30D-1D12561799F5" referredColumn="0736DFEB-6E2E-8890-C3FF-0D9FACA1611C"/>
+</associations>
+</Column>
+<Column name="id_transaccion_tarjeta_cr" id="22B24829-BB36-D1BC-5F8D-CA047DEBF281">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-10-24 09:47:28 UTC</createdTime>
+<generatorID>89EDD587-2287-1856-6379-4F5A523F69D7</generatorID>
+<ownerDesignName>base-datos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha" id="7093DEC2-04D0-1F8F-F63E-B3220D187999">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-10-24 09:47:28 UTC</createdTime>
+<generatorID>33000736-0D11-7B17-D6E5-4481FEDC82F9</generatorID>
+<ownerDesignName>base-datos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="hora" id="44024D4D-647C-B14E-195D-76FB73E496E5">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-10-24 09:47:28 UTC</createdTime>
+<generatorID>413325F6-F930-35CF-51C3-413F11048BC4</generatorID>
+<ownerDesignName>base-datos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT014</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descripcion" id="A667E238-5D70-7933-DD8A-B044E2C33A5C">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-10-24 09:47:28 UTC</createdTime>
+<generatorID>0FC63BC8-972B-15D8-90CD-651317DC84A2</generatorID>
+<ownerDesignName>base-datos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_cliente" id="86A22816-4FD8-2C70-9A35-7150407AB530">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-10-24 09:47:28 UTC</createdTime>
+<generatorID>29E3F061-CD74-DFFF-EA2F-2BF8F6CE02FE</generatorID>
+<ownerDesignName>base-datos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5BB9B0F5-2044-0E5F-BE60-A7B3968CB01A" name="TRANSACCIONES_TARJETA_CR_PK">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-10-24 09:47:28 UTC</createdTime>
+<generatorID>62B81526-A74C-C0EA-5F54-2A3C6B28CEB4</generatorID>
+<ownerDesignName>base-datos</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F312F876-73CF-84E3-DF95-58BE8E10ABFB"/>
+<colUsage columnID="86A22816-4FD8-2C70-9A35-7150407AB530"/>
+<colUsage columnID="22B24829-BB36-D1BC-5F8D-CA047DEBF281"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="99F82155-BB26-5556-CBB5-1CC22FCFB3C5" name="TRANSACCIONES_TARJETA_CR_TARJETA_CREDITO_FK">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-10-24 09:47:28 UTC</createdTime>
+<generatorID>353C8F77-721D-115B-C9A1-323DC8C78CEF</generatorID>
+<ownerDesignName>base-datos</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F312F876-73CF-84E3-DF95-58BE8E10ABFB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

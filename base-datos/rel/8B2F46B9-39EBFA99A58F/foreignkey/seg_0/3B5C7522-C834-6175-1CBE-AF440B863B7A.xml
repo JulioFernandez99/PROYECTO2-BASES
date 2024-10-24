@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="3B5C7522-C834-6175-1CBE-AF440B863B7A" containerWithKeyObject="1416BD83-6DE5-C274-03EF-AF9DF308BFC2" localFKIndex="4C43F939-E034-EBB0-99AE-A14DD6B01F28" name="EMPLEADO_PLANILLA_EMPLEADOS_FK">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-10-24 09:47:28 UTC</createdTime>
+<generatorID>D70360F7-B018-5DC3-57DB-45A402E6EC72</generatorID>
+<ownerDesignName>base-datos</ownerDesignName>
+<referredTableLongName>PLANILLA_EMPLEADOS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>CD725D19-B2A4-91A8-B23B-01E41A1A1A12</referredTableID>
+<keyObject>EE9D0985-FA93-75DA-9965-9C70A9ECEFA6</keyObject>
+<referredKeyID>EE9D0985-FA93-75DA-9965-9C70A9ECEFA6</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>id_planilla</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

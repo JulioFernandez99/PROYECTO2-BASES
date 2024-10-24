@@ -95,6 +95,79 @@
 <colAssociation fkAssociation="8F23439E-846A-B683-7F10-8FBCD2195C16" referredColumn="DA93AC28-7303-965A-9691-349A0F915016"/>
 </associations>
 </Column>
+<Column name="ROL_id_rol2" id="3413A285-D2F9-4C0C-3B02-B5DADCEB96CD">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-10-24 09:47:28 UTC</createdTime>
+<generatorID>E13F3C47-117E-E240-71F6-E8B697D5EEF8</generatorID>
+<ownerDesignName>base-datos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F2F8229F-E3EA-653A-C3C7-C1C16DE3B0C2" referredColumn="DA93AC28-7303-965A-9691-349A0F915016"/>
+</associations>
+</Column>
+<Column name="salario" id="387C8781-C592-FB52-563B-DCFF4406DC46">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-10-24 09:47:28 UTC</createdTime>
+<generatorID>3AF9013B-A349-7F92-3555-63770CA2E960</generatorID>
+<ownerDesignName>base-datos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>15</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,15,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PLANILLA_EMPLEADOS_id_planilla" id="965AC907-1F7D-9A13-089C-6924E56DED5B">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-10-24 09:47:28 UTC</createdTime>
+<generatorID>05D49D2B-F273-AB24-4B24-CBAC62A89BC1</generatorID>
+<ownerDesignName>base-datos</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3B5C7522-C834-6175-1CBE-AF440B863B7A" referredColumn="F3C45A3B-C542-C9AE-DEFF-BF390FF8E453"/>
+</associations>
+</Column>
+<Column name="EMPLEADO_id_empleado" id="44C46B45-F352-B3A1-7738-F57873FDFE96">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-10-24 09:47:28 UTC</createdTime>
+<generatorID>273543E4-9B1A-84B7-976A-F830FAAD61D1</generatorID>
+<ownerDesignName>base-datos</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="96C99DAA-6302-1920-4F8D-6CF1B57632FE" referredColumn="FC14C767-6456-AAC0-2C0D-AB91B909C7F4"/>
+</associations>
+</Column>
+<Column name="id_rol11" id="C5782555-1A9E-174C-A284-04A89B4F4EB0">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-10-24 09:47:28 UTC</createdTime>
+<generatorID>BB879ADB-EA92-B5B0-4524-40FDC2FC4C02</generatorID>
+<ownerDesignName>base-datos</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="5C2AE3B9-31C0-9456-6476-3F943D9A8B9B" name="EMPLEADO_PK">
@@ -129,6 +202,39 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="29B815DD-F429-DB84-D42B-8F44713726B5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4C43F939-E034-EBB0-99AE-A14DD6B01F28" name="EMPLEADO_PLANILLA_EMPLEADOS_FK">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-10-24 09:47:28 UTC</createdTime>
+<generatorID>D70360F7-B018-5DC3-57DB-45A402E6EC72</generatorID>
+<ownerDesignName>base-datos</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="965AC907-1F7D-9A13-089C-6924E56DED5B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="12A2B868-B3A5-CD3D-A2F5-7AB1C3161F18" name="EMPLEADO_ROL_FKv2">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-10-24 09:47:28 UTC</createdTime>
+<generatorID>EA327964-8DD3-75B8-4AF2-8BB2D1C70A01</generatorID>
+<ownerDesignName>base-datos</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3413A285-D2F9-4C0C-3B02-B5DADCEB96CD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B152D362-31A2-9F4F-9283-CDA0A4E496A4" name="EMPLEADO_EMPLEADO_FK">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-10-24 09:47:28 UTC</createdTime>
+<generatorID>C9E628E5-DF30-727B-632B-BB85611A5928</generatorID>
+<ownerDesignName>base-datos</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="44C46B45-F352-B3A1-7738-F57873FDFE96"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

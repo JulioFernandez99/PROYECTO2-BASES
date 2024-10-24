@@ -85,6 +85,21 @@
 <colAssociation fkAssociation="F7E5AF08-B658-78CB-6619-0FF529AB8B03" referredColumn="554CA1A7-8FA0-4B60-873B-81E4894E4388"/>
 </associations>
 </Column>
+<Column name="CLIENTE_id_cliente2" id="0C27BE94-D3BE-110E-4E59-B2CECB3618AA">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-10-24 09:47:28 UTC</createdTime>
+<generatorID>C5ECF9B2-2254-C8C2-BDF1-C910201D10B0</generatorID>
+<ownerDesignName>base-datos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BFA587E4-44EA-AFB3-9813-CD8B5B898ECC" referredColumn="7B527CDA-9E29-6B03-185C-8FFABDA81B98"/>
+</associations>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="C6135588-D47C-BA33-140F-70F3D4E288D4" name="CUENTA_PK">
@@ -119,6 +134,17 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="DF7D6146-444B-B677-E7AD-C8DB4BFCB774"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1B342F2B-40E2-51C6-6AAF-AE346BECDD13" name="CUENTA_CLIENTE_FKv2">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-10-24 09:47:28 UTC</createdTime>
+<generatorID>54F9A8BE-94BA-2C6B-CE68-985483996557</generatorID>
+<ownerDesignName>base-datos</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0C27BE94-D3BE-110E-4E59-B2CECB3618AA"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

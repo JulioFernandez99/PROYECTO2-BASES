@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A48A08B7-BF96-331C-8F60-C25C7BB46AE6" name="TRANSACCIONES_PRESTAMO">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-10-24 09:47:28 UTC</createdTime>
+<generatorID>E3BB0F12-6FB0-9618-D648-28C626E2DDAD</generatorID>
+<ownerDesignName>base-datos</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PRESTAMO_id_prestamo" id="E8BAB76A-8DF4-162C-68CC-73CA3BD00723">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-10-24 09:47:28 UTC</createdTime>
+<generatorID>27134206-683E-A7E0-5AE0-CA024BE21C60</generatorID>
+<ownerDesignName>base-datos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0075B4E7-B4FB-B450-2E7A-901C8327212D" referredColumn="5D100C7D-DAA9-5739-D4C0-AF4AD4F0C0E9"/>
+</associations>
+</Column>
+<Column name="id_transaccion_prestamo" id="946D5A83-7EB0-1EE1-195B-FF1FCADA4A90">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-10-24 09:47:28 UTC</createdTime>
+<generatorID>700BBD37-820E-CC6E-541D-5B280BC17EB3</generatorID>
+<ownerDesignName>base-datos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha" id="9EA92ADD-1698-122E-F8E7-FF2330011487">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-10-24 09:47:28 UTC</createdTime>
+<generatorID>57AADD98-1649-4F9B-941A-63D75EA7D906</generatorID>
+<ownerDesignName>base-datos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="hora" id="9F78BBD1-BCE7-76FA-B250-A0F30D981880">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-10-24 09:47:28 UTC</createdTime>
+<generatorID>A54C19F8-C2D0-7E91-9463-FCA00748A8C2</generatorID>
+<ownerDesignName>base-datos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT014</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descripcion" id="6BBBCA58-133A-4623-3DC3-21E740E54710">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-10-24 09:47:28 UTC</createdTime>
+<generatorID>781D0E4F-E7D1-2413-D384-94FC608AD18E</generatorID>
+<ownerDesignName>base-datos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5D3DE40E-2A76-6E58-64EA-AB053591E668" name="TRANSACCIONES_PRESTAMO_PK">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-10-24 09:47:28 UTC</createdTime>
+<generatorID>16F29B4C-298A-8878-D172-E912ADA4BA3C</generatorID>
+<ownerDesignName>base-datos</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E8BAB76A-8DF4-162C-68CC-73CA3BD00723"/>
+<colUsage columnID="946D5A83-7EB0-1EE1-195B-FF1FCADA4A90"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="17DD8B5C-B717-BA0D-9321-2B05D7F44890" name="TRANSACCIONES_PRESTAMO_PRESTAMO_FK">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-10-24 09:47:28 UTC</createdTime>
+<generatorID>7FFE3981-064E-65A0-66B0-15C13E60F9CA</generatorID>
+<ownerDesignName>base-datos</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E8BAB76A-8DF4-162C-68CC-73CA3BD00723"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

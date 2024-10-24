@@ -543,47 +543,66 @@ CREATE TABLE transaccion (
 );
 
 ---------------------------------------------------
-
 CREATE TABLE transacciones_prestamo (
-    prestamo_id_prestamo    INTEGER NOT NULL,
+    id_prestamo           INTEGER NOT NULL,
     id_transaccion_prestamo INTEGER NOT NULL,
-    fecha                   DATE NOT NULL,
-    hora                    DATE NOT NULL,
-    descripcion             VARCHAR2(255 CHAR) NOT NULL
+    fecha                 DATE NOT NULL,
+    hora                  DATE NOT NULL,
+    descripcion           VARCHAR2(255 CHAR) NOT NULL
 );
 
-ALTER TABLE transacciones_prestamo ADD CONSTRAINT transacciones_prestamo_pk PRIMARY KEY ( prestamo_id_prestamo,
-                                                                                          id_transaccion_prestamo );
+ALTER TABLE transacciones_prestamo
+ADD CONSTRAINT transacciones_prestamo_pk PRIMARY KEY (id_prestamo, id_transaccion_prestamo);
+
+
+ALTER TABLE transacciones_prestamo
+ADD CONSTRAINT transacciones_prestamo_fk FOREIGN KEY (id_prestamo) REFERENCES prestamo (id_prestamo);
+
 
 CREATE TABLE transacciones_tarjeta_cr (
-    tarjeta_credito_id_tarjeta_cr INTEGER NOT NULL,
-    id_transaccion_tarjeta_cr     INTEGER NOT NULL,
-    fecha                         DATE NOT NULL,
-    hora                          DATE NOT NULL,
-    descripcion                   VARCHAR2(255 CHAR) NOT NULL,
-    id_cliente                    INTEGER NOT NULL
+    id_tarjeta_cr            INTEGER NOT NULL,
+    id_transaccion_tarjeta_cr INTEGER NOT NULL,
+    fecha                    DATE NOT NULL,
+    hora                     DATE NOT NULL,
+    descripcion              VARCHAR2(255 CHAR) NOT NULL,
+    id_cliente               INTEGER NOT NULL
 );
 
 ALTER TABLE transacciones_tarjeta_cr
-    ADD CONSTRAINT transacciones_tarjeta_cr_pk PRIMARY KEY ( tarjeta_credito_id_tarjeta_cr,
-                                                             id_cliente,
-                                                             id_transaccion_tarjeta_cr );
+ADD CONSTRAINT transacciones_tarjeta_cr_pk PRIMARY KEY (id_tarjeta_cr, id_cliente, id_transaccion_tarjeta_cr);
+
+
+ALTER TABLE transacciones_tarjeta_cr
+ADD CONSTRAINT transacciones_tarjeta_cr_fk_tarjeta FOREIGN KEY (id_tarjeta_cr) REFERENCES tarjeta_credito (id_tarjeta_cr);
+
+ALTER TABLE transacciones_tarjeta_cr
+ADD CONSTRAINT transacciones_tarjeta_cr_fk_cliente FOREIGN KEY (id_cliente) REFERENCES cliente (id_cliente);
 
 CREATE TABLE transacciones_tarjeta_db (
-    id_transaccion_db                   INTEGER NOT NULL, 
-    tdebito_cliente_id_cliente   INTEGER NOT NULL,
-    tarjeta_debito_id_tarjeta_db        INTEGER NOT NULL,
-    fecha                               DATE NOT NULL,
-    hora                                DATE NOT NULL,
-    descripcion                         VARCHAR2(255 CHAR), 
-
-    tdebito_id_estado_tarjeta_db INTEGER NOT NULL
+    id_transaccion_db            INTEGER NOT NULL, 
+    id_cliente                   INTEGER NOT NULL,
+    id_tarjeta_db                INTEGER NOT NULL,
+    fecha                        DATE NOT NULL,
+    hora                         DATE NOT NULL,
+    descripcion                  VARCHAR2(255 CHAR), 
+    id_estado_tarjeta_db         INTEGER NOT NULL
 );
 
 ALTER TABLE transacciones_tarjeta_db
-    ADD CONSTRAINT transacciones_tarjeta_db_pk PRIMARY KEY ( tdebito_cliente_id_cliente,
-                                                             tarjeta_debito_id_tarjeta_db,
-                                                             tdebito_id_estado_tarjeta_db );
+ADD CONSTRAINT transacciones_tarjeta_db_pk PRIMARY KEY (id_cliente, id_tarjeta_db, id_transaccion_db);
+
+
+ALTER TABLE transacciones_tarjeta_db
+ADD CONSTRAINT transacciones_tarjeta_db_fk_tarjeta FOREIGN KEY (id_tarjeta_db) REFERENCES tarjeta_debito (id_tarjeta_db);
+
+ALTER TABLE transacciones_tarjeta_db
+ADD CONSTRAINT transacciones_tarjeta_db_fk_cliente FOREIGN KEY (id_cliente) REFERENCES cliente (id_cliente);
+
+ALTER TABLE transacciones_tarjeta_db
+ADD CONSTRAINT transacciones_tarjeta_db_fk_estado FOREIGN KEY (id_estado_tarjeta_db) REFERENCES estado_tarjeta_debito (id_estado_tarjeta_db);
+
+
+
 
 
 ---------------------------------------------------

@@ -1,0 +1,137 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8242C1B7-A5FB-E491-86C9-6075746EF208" name="CARTERA_CLIENTES">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-10-24 09:47:28 UTC</createdTime>
+<generatorID>094388E5-044A-1E09-0C95-376492666A6B</generatorID>
+<ownerDesignName>base-datos</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_cartera" id="1B8FF642-1A90-917F-D529-FEB9C3AA12FD">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-10-24 09:47:28 UTC</createdTime>
+<generatorID>1CF09071-D1A9-CBD0-65B6-394495F7B539</generatorID>
+<ownerDesignName>base-datos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TIPO_CARTERA_id_tipo_cartera" id="7FA9CAB9-57E3-4D35-755D-E9ADDBCC2C35">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-10-24 09:47:28 UTC</createdTime>
+<generatorID>EF8EFE82-9B5F-3BA5-8A54-2CEACA8028B4</generatorID>
+<ownerDesignName>base-datos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="ADAE4313-81D6-00FE-B67C-AA177E0EAEBB" referredColumn="C517A4CA-5B02-94A0-DFF8-AE2155141465"/>
+</associations>
+</Column>
+<Column name="AGENCIA_id_agencia" id="9A6F2661-B5C6-D2E5-A97A-72D85D22C1C1">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-10-24 09:47:28 UTC</createdTime>
+<generatorID>2E792C71-4553-AB30-BED6-DE714F624B90</generatorID>
+<ownerDesignName>base-datos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="660A0DB2-8C12-C6AE-4BBB-12894B36374A" referredColumn="554CA1A7-8FA0-4B60-873B-81E4894E4388"/>
+</associations>
+</Column>
+<Column name="CLIENTE_id_cliente" id="AB2924EF-54A4-FD30-39A0-0C5D060C6926">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-10-24 09:47:28 UTC</createdTime>
+<generatorID>928B86D6-F1B4-CFFD-F22A-65FBD7CF2A0B</generatorID>
+<ownerDesignName>base-datos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="855CBD62-5E67-E412-70CF-1A753FE8AF63" referredColumn="7B527CDA-9E29-6B03-185C-8FFABDA81B98"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9D1BAFD4-11D8-4AFA-787B-2B0E9C3C0345" name="CARTERA_CLIENTES_PK">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-10-24 09:47:28 UTC</createdTime>
+<generatorID>CA117876-8F87-CEB8-4953-8BA32735C7FE</generatorID>
+<ownerDesignName>base-datos</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1B8FF642-1A90-917F-D529-FEB9C3AA12FD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8C2A0001-E23D-8C34-ED63-49CDC96AF43D" name="CARTERA_CLIENTES__IDX">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-10-24 09:47:28 UTC</createdTime>
+<ownerDesignName>base-datos</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>572D92FB-12A4-D5E3-28E3-6A7E9A019359</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="7FA9CAB9-57E3-4D35-755D-E9ADDBCC2C35"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BBE78898-EA0C-E6F8-8EAC-BB7C8B39DA9E" name="CARTERA_CLIENTES__IDXv1">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-10-24 09:47:28 UTC</createdTime>
+<ownerDesignName>base-datos</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>4F0C8882-89C3-35A1-D172-769A03E4A928</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="9A6F2661-B5C6-D2E5-A97A-72D85D22C1C1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="75F085AA-3172-B17E-44AA-9911CD2FBB06" name="CARTERA_CLIENTES_TIPO_CARTERA_FK">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-10-24 09:47:28 UTC</createdTime>
+<generatorID>572D92FB-12A4-D5E3-28E3-6A7E9A019359</generatorID>
+<ownerDesignName>base-datos</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7FA9CAB9-57E3-4D35-755D-E9ADDBCC2C35"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2569C919-F5D2-10DB-7A8F-74DF21DEE3C5" name="CARTERA_CLIENTES_AGENCIA_FK">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-10-24 09:47:28 UTC</createdTime>
+<generatorID>4F0C8882-89C3-35A1-D172-769A03E4A928</generatorID>
+<ownerDesignName>base-datos</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9A6F2661-B5C6-D2E5-A97A-72D85D22C1C1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="21E754E3-30D0-EBCB-E2E6-3B0FD38E8772" name="CARTERA_CLIENTES_CLIENTE_FK">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-10-24 09:47:28 UTC</createdTime>
+<generatorID>095369AB-EF37-4E57-8BBE-7316A6632C50</generatorID>
+<ownerDesignName>base-datos</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AB2924EF-54A4-FD30-39A0-0C5D060C6926"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

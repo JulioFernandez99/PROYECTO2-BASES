@@ -107,6 +107,36 @@
 <colAssociation fkAssociation="33F1385D-E605-EF18-B102-CFC84015B538" referredColumn="E4FF63B3-24FA-4867-E135-58AC4F7EFE6F"/>
 </associations>
 </Column>
+<Column name="ESTADO_FINANCIERO_id_estado_financiero" id="C1F6CF10-3B96-F1C0-EE74-0934E1C0DD10">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-10-24 09:47:28 UTC</createdTime>
+<generatorID>5608B5C6-3CB5-EDDB-DB6C-B5CAAA59D65B</generatorID>
+<ownerDesignName>base-datos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="ABBCD862-EA3B-E131-EC38-DF4C92567061" referredColumn="E8A917B0-8DC9-FAA0-EA0B-517F1F2EBF60"/>
+</associations>
+</Column>
+<Column name="BOVEDA_id_boveda" id="55299D56-691C-FFAA-4388-4B49B87C9023">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-10-24 09:47:28 UTC</createdTime>
+<generatorID>EBD07DC9-3D14-1AF6-6B53-C2E35AB9C04C</generatorID>
+<ownerDesignName>base-datos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5E124840-9D79-A7ED-0272-58BEA6818867" referredColumn="EC2CC3F9-C647-50E9-5DBD-CF2EEF011FF7"/>
+</associations>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="C3137F4B-5148-F684-4D80-8B9C47A91F34" name="AGENCIA_PK">
@@ -119,6 +149,28 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="554CA1A7-8FA0-4B60-873B-81E4894E4388"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="39E1499C-E44A-0C07-C919-A2F2088FFFF7" name="AGENCIA__IDX">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-10-24 09:47:28 UTC</createdTime>
+<ownerDesignName>base-datos</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>D55B6A25-F6F8-B690-C7F7-81A705080E52</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="C1F6CF10-3B96-F1C0-EE74-0934E1C0DD10"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5ED63CBD-C3BC-5B8B-4A50-D70DF895811D" name="AGENCIA__IDXv1">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-10-24 09:47:28 UTC</createdTime>
+<ownerDesignName>base-datos</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>32B633E9-DE59-404C-9C47-37AAF37FEE8A</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="55299D56-691C-FFAA-4388-4B49B87C9023"/>
 </indexColumnUsage>
 </ind_PK_UK>
 <ind_PK_UK id="79034D53-E460-BC0E-D295-23CA0D8389C9" name="AGENCIA_MUNICIPIO_FK">
@@ -141,6 +193,28 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="9224E711-193D-7FB7-ADF5-CB8F4715102F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="330A7DB8-BF67-9225-0AEA-DC31ACCA4AE3" name="AGENCIA_ESTADO_FINANCIERO_FK">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-10-24 09:47:28 UTC</createdTime>
+<generatorID>D55B6A25-F6F8-B690-C7F7-81A705080E52</generatorID>
+<ownerDesignName>base-datos</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C1F6CF10-3B96-F1C0-EE74-0934E1C0DD10"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4337BE0C-C512-C116-768A-5ACEEE04E26C" name="AGENCIA_BOVEDA_FK">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-10-24 09:47:28 UTC</createdTime>
+<generatorID>32B633E9-DE59-404C-9C47-37AAF37FEE8A</generatorID>
+<ownerDesignName>base-datos</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="55299D56-691C-FFAA-4388-4B49B87C9023"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

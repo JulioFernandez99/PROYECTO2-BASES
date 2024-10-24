@@ -1,17 +1,17 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1F206B04-5412-71BA-CEA8-CA327E8ADF72" name="ROL">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CD725D19-B2A4-91A8-B23B-01E41A1A1A12" name="PLANILLA_EMPLEADOS">
 <createdBy>Lenovo</createdBy>
-<createdTime>2024-09-12 18:01:32 UTC</createdTime>
-<generatorID>342923F0-44E3-7CAB-730E-263FC0940FD6</generatorID>
+<createdTime>2024-10-24 09:47:28 UTC</createdTime>
+<generatorID>6AED171E-1212-8C38-637C-A75CCEA56278</generatorID>
 <ownerDesignName>base-datos</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="id_rol" id="DA93AC28-7303-965A-9691-349A0F915016">
+<Column name="id_planilla" id="F3C45A3B-C542-C9AE-DEFF-BF390FF8E453">
 <createdBy>Lenovo</createdBy>
-<createdTime>2024-09-12 18:01:32 UTC</createdTime>
-<generatorID>4111F061-F6B8-C8DE-D9DC-568CBB099F71</generatorID>
+<createdTime>2024-10-24 09:47:28 UTC</createdTime>
+<generatorID>F811CAAD-2E35-0180-B1C1-BB171E501F4B</generatorID>
 <ownerDesignName>base-datos</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -19,30 +19,27 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="rol" id="DFA992A3-CEAC-2C2B-CFF9-9915AC6783E0">
+<Column name="id_empleado" id="2807CCAB-8BC1-B1C9-7966-1D43091EE705">
 <createdBy>Lenovo</createdBy>
-<createdTime>2024-09-12 18:01:32 UTC</createdTime>
-<generatorID>EF9A44BA-B135-C7C1-B491-3746CF07765E</generatorID>
+<createdTime>2024-10-24 09:47:28 UTC</createdTime>
+<generatorID>0B5DA6FB-8A84-1749-3823-F0FDE63520E3</generatorID>
 <ownerDesignName>base-datos</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>30 CHAR</dataTypeSize>
-<ownDataTypeParameters>30 CHAR,,</ownDataTypeParameters>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="F44913F9-C3FB-F479-6FF1-AAE0CB04A5E5" name="ROL_PK">
+<ind_PK_UK id="EE9D0985-FA93-75DA-9965-9C70A9ECEFA6" name="PLANILLA_EMPLEADOS_PK">
 <createdBy>Lenovo</createdBy>
-<createdTime>2024-09-12 18:01:32 UTC</createdTime>
-<generatorID>7FA4A3FC-4157-6064-7E17-57CB9BB47C05</generatorID>
+<createdTime>2024-10-24 09:47:28 UTC</createdTime>
+<generatorID>F5E0633A-A0C8-BD48-3D3D-8ED2AC35C7E4</generatorID>
 <ownerDesignName>base-datos</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="DA93AC28-7303-965A-9691-349A0F915016"/>
+<colUsage columnID="F3C45A3B-C542-C9AE-DEFF-BF390FF8E453"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

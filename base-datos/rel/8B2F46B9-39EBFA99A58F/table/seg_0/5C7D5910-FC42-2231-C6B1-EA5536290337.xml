@@ -1,17 +1,17 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1F206B04-5412-71BA-CEA8-CA327E8ADF72" name="ROL">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5C7D5910-FC42-2231-C6B1-EA5536290337" name="TIPO_CARTERA">
 <createdBy>Lenovo</createdBy>
-<createdTime>2024-09-12 18:01:32 UTC</createdTime>
-<generatorID>342923F0-44E3-7CAB-730E-263FC0940FD6</generatorID>
+<createdTime>2024-10-24 09:47:28 UTC</createdTime>
+<generatorID>79797D1B-4751-78F1-BC8F-5FF7825071C0</generatorID>
 <ownerDesignName>base-datos</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="id_rol" id="DA93AC28-7303-965A-9691-349A0F915016">
+<Column name="id_tipo_cartera" id="C517A4CA-5B02-94A0-DFF8-AE2155141465">
 <createdBy>Lenovo</createdBy>
-<createdTime>2024-09-12 18:01:32 UTC</createdTime>
-<generatorID>4111F061-F6B8-C8DE-D9DC-568CBB099F71</generatorID>
+<createdTime>2024-10-24 09:47:28 UTC</createdTime>
+<generatorID>F151B8BB-4086-6653-82BD-6B3BF198F3F9</generatorID>
 <ownerDesignName>base-datos</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -19,30 +19,30 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="rol" id="DFA992A3-CEAC-2C2B-CFF9-9915AC6783E0">
+<Column name="tipo_cartera" id="ECA2A67D-66A3-5437-0834-134986D56273">
 <createdBy>Lenovo</createdBy>
-<createdTime>2024-09-12 18:01:32 UTC</createdTime>
-<generatorID>EF9A44BA-B135-C7C1-B491-3746CF07765E</generatorID>
+<createdTime>2024-10-24 09:47:28 UTC</createdTime>
+<generatorID>F772913B-286A-CD2E-D35E-36E8B391D2D9</generatorID>
 <ownerDesignName>base-datos</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>30 CHAR</dataTypeSize>
-<ownDataTypeParameters>30 CHAR,,</ownDataTypeParameters>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="F44913F9-C3FB-F479-6FF1-AAE0CB04A5E5" name="ROL_PK">
+<ind_PK_UK id="00CD1E4E-F7C2-610E-FD55-C29766044B3F" name="TIPO_CARTERA_PK">
 <createdBy>Lenovo</createdBy>
-<createdTime>2024-09-12 18:01:32 UTC</createdTime>
-<generatorID>7FA4A3FC-4157-6064-7E17-57CB9BB47C05</generatorID>
+<createdTime>2024-10-24 09:47:28 UTC</createdTime>
+<generatorID>0232329D-E0B1-EDEE-8ED5-4449B733C4E6</generatorID>
 <ownerDesignName>base-datos</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="DA93AC28-7303-965A-9691-349A0F915016"/>
+<colUsage columnID="C517A4CA-5B02-94A0-DFF8-AE2155141465"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

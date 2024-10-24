@@ -24,7 +24,6 @@
 <createdTime>2024-09-12 18:01:32 UTC</createdTime>
 <generatorID>DE1839F9-7DA7-E79B-53F8-A14CF8E32A84</generatorID>
 <ownerDesignName>base-datos</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>

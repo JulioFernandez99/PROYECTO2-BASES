@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="5E124840-9D79-A7ED-0272-58BEA6818867" containerWithKeyObject="F375492C-AB31-0DA3-32F2-B137700B3B4B" localFKIndex="4337BE0C-C512-C116-768A-5ACEEE04E26C" name="AGENCIA_BOVEDA_FK">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-10-24 09:47:28 UTC</createdTime>
+<generatorID>32B633E9-DE59-404C-9C47-37AAF37FEE8A</generatorID>
+<ownerDesignName>base-datos</ownerDesignName>
+<referredTableLongName>BOVEDA</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>2A5471B2-049B-2DBA-5A0C-10E43B1D4638</referredTableID>
+<keyObject>F27B8A47-9B85-AA13-4328-9D649CE65D87</keyObject>
+<referredKeyID>F27B8A47-9B85-AA13-4328-9D649CE65D87</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_boveda</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

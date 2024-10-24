@@ -176,6 +176,33 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="EMPLEADO_id_empleado" id="51ADE682-A51D-798D-62A0-1BF8F0FA89C4">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-10-24 09:47:28 UTC</createdTime>
+<generatorID>C06732F9-CB68-AD59-6B5D-DFD2ADB94A9B</generatorID>
+<ownerDesignName>base-datos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="83A23F10-4956-A322-9A8E-6D38AAACDD59" referredColumn="FC14C767-6456-AAC0-2C0D-AB91B909C7F4"/>
+</associations>
+</Column>
+<Column name="id_rol" id="F06B0587-2DDD-8218-BC91-3DE4DD4001BA">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-10-24 09:47:28 UTC</createdTime>
+<generatorID>335B9360-EBFB-D94A-3D45-BE7B2CF9265D</generatorID>
+<ownerDesignName>base-datos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="CD09B6EA-535C-4D10-6B0E-C71BC7474B6C" name="TRANSACCION_PK">
@@ -243,6 +270,17 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="0DDA1A86-888C-67F1-3F60-0B9EDC382091"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E9431EDA-ED60-0D4F-5C32-E38322958B63" name="TRANSACCION_EMPLEADO_FK">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-10-24 09:47:28 UTC</createdTime>
+<generatorID>D58EFBCD-0C78-94A8-0D45-7C20CA19E6B8</generatorID>
+<ownerDesignName>base-datos</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="51ADE682-A51D-798D-62A0-1BF8F0FA89C4"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

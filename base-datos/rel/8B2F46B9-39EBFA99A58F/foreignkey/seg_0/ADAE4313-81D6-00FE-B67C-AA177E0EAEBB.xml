@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="ADAE4313-81D6-00FE-B67C-AA177E0EAEBB" containerWithKeyObject="8242C1B7-A5FB-E491-86C9-6075746EF208" localFKIndex="75F085AA-3172-B17E-44AA-9911CD2FBB06" name="CARTERA_CLIENTES_TIPO_CARTERA_FK">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-10-24 09:47:28 UTC</createdTime>
+<generatorID>572D92FB-12A4-D5E3-28E3-6A7E9A019359</generatorID>
+<ownerDesignName>base-datos</ownerDesignName>
+<referredTableLongName>TIPO_CARTERA</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>5C7D5910-FC42-2231-C6B1-EA5536290337</referredTableID>
+<keyObject>00CD1E4E-F7C2-610E-FD55-C29766044B3F</keyObject>
+<referredKeyID>00CD1E4E-F7C2-610E-FD55-C29766044B3F</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_tipo_cartera</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -8,7 +8,7 @@
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="id_tarjeta" id="0736DFEB-6E2E-8890-C3FF-0D9FACA1611C">
+<Column name="id_tarjeta_cr" id="0736DFEB-6E2E-8890-C3FF-0D9FACA1611C">
 <createdBy>Lenovo</createdBy>
 <createdTime>2024-09-12 18:01:32 UTC</createdTime>
 <generatorID>2C275457-EF9B-E69A-E0FA-1C0FA175B5BD</generatorID>
@@ -141,6 +141,21 @@
 <colAssociation fkAssociation="C90D8760-D898-10F9-E088-4D383EABAAAF" referredColumn="A21B2B9D-D91D-036B-5529-BA5DDFF7CCAF"/>
 </associations>
 </Column>
+<Column name="CLIENTE_id_cliente2" id="CF704A66-8B43-1565-0634-3BA0CA9C965F">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-10-24 09:47:28 UTC</createdTime>
+<generatorID>0DD3E195-C6C3-516D-0648-D49F826B9FEE</generatorID>
+<ownerDesignName>base-datos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="929E0B92-1C7C-45B1-CC8B-2E47B4E28633" referredColumn="7B527CDA-9E29-6B03-185C-8FFABDA81B98"/>
+</associations>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="76545AAE-6A5C-1E4A-1FF8-A8D381AED157" name="TARJETA_CREDITO_PK">
@@ -175,6 +190,17 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="321DF3E6-D7FF-F146-CE0B-486A2B2AE1C4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="807B886B-23E9-9C9C-5D95-EAE96E023E47" name="TARJETA_CREDITO_CLIENTE_FKv2">
+<createdBy>Lenovo</createdBy>
+<createdTime>2024-10-24 09:47:28 UTC</createdTime>
+<generatorID>A2D69FC2-1C1F-4740-1FFC-A9D988F0DCB2</generatorID>
+<ownerDesignName>base-datos</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CF704A66-8B43-1565-0634-3BA0CA9C965F"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

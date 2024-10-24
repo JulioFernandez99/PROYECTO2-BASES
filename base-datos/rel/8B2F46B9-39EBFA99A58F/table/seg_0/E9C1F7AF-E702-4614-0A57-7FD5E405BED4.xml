@@ -1,48 +1,46 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1F206B04-5412-71BA-CEA8-CA327E8ADF72" name="ROL">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E9C1F7AF-E702-4614-0A57-7FD5E405BED4" name="ESTADO_TARJETA_DEBITO">
 <createdBy>Lenovo</createdBy>
-<createdTime>2024-09-12 18:01:32 UTC</createdTime>
-<generatorID>342923F0-44E3-7CAB-730E-263FC0940FD6</generatorID>
+<createdTime>2024-10-24 09:47:28 UTC</createdTime>
+<generatorID>C6A15F8E-F19F-60F7-9914-1C0CBBAD6485</generatorID>
 <ownerDesignName>base-datos</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="id_rol" id="DA93AC28-7303-965A-9691-349A0F915016">
+<Column name="id_estado_tarjeta_db" id="2D424B88-8D42-8D10-FD28-E80CB748D7F7">
 <createdBy>Lenovo</createdBy>
-<createdTime>2024-09-12 18:01:32 UTC</createdTime>
-<generatorID>4111F061-F6B8-C8DE-D9DC-568CBB099F71</generatorID>
+<createdTime>2024-10-24 09:47:28 UTC</createdTime>
+<generatorID>143AD35A-AA25-9810-0ADC-92FF3A9820F6</generatorID>
 <ownerDesignName>base-datos</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
+<use>0</use>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="rol" id="DFA992A3-CEAC-2C2B-CFF9-9915AC6783E0">
+<Column name="estado" id="094CCC2D-6144-14F3-4FB1-3C567C147765">
 <createdBy>Lenovo</createdBy>
-<createdTime>2024-09-12 18:01:32 UTC</createdTime>
-<generatorID>EF9A44BA-B135-C7C1-B491-3746CF07765E</generatorID>
+<createdTime>2024-10-24 09:47:28 UTC</createdTime>
+<generatorID>1D4C8281-6676-BEDC-BAF9-71E68D438A2C</generatorID>
 <ownerDesignName>base-datos</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>30 CHAR</dataTypeSize>
-<ownDataTypeParameters>30 CHAR,,</ownDataTypeParameters>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="F44913F9-C3FB-F479-6FF1-AAE0CB04A5E5" name="ROL_PK">
+<ind_PK_UK id="536FAB0B-7071-2272-759D-29EFFF2591F1" name="ESTADO_TARJETA_DEBITO_PK">
 <createdBy>Lenovo</createdBy>
-<createdTime>2024-09-12 18:01:32 UTC</createdTime>
-<generatorID>7FA4A3FC-4157-6064-7E17-57CB9BB47C05</generatorID>
+<createdTime>2024-10-24 09:47:28 UTC</createdTime>
+<generatorID>B967479C-B5E9-B967-E2E7-EC88714C16DC</generatorID>
 <ownerDesignName>base-datos</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="DA93AC28-7303-965A-9691-349A0F915016"/>
+<colUsage columnID="2D424B88-8D42-8D10-FD28-E80CB748D7F7"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>
