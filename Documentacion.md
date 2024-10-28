@@ -161,7 +161,7 @@ La tabla anterior representa a Agencias el cual contiene TIMESTAMP para manejar 
 
 ### SQL COMPLETO
 
-<CODIGO_SQL>
+<details>
 
 ```
 -- =====================================================
@@ -1006,5 +1006,5 @@ END listar_transacciones_cliente_por_datos;
 -- END;
 ```
 
-</CODIGO_SQL>
+</details>
 
