@@ -110,5 +110,5 @@ de equilibrio o en quiebra.
 
 Primero empezamos con nuestro diagrama conceptual que nos ayudará a comenzar con una idea de lo que es la base de datos y la estimación de tablas que se requieren para implementar el proyecto.
 
-<iframe src="Imagenes/Conceptual.jpeg" width="100%" height="600px"></iframe>
+<img src="Imagenes/Conceptual.jpg" width="100%" height="600px"></img>
 
