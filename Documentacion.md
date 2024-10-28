@@ -150,7 +150,7 @@ Realizamos el archivo sql, que contiene la creación de todas las tablas que hem
 
 ### EJEMPLO DE UNA TABLA CREADA:
 
-```
+```sql
 CREATE TABLE agencia (
     id_agencia             INTEGER NOT NULL,
     nombre                 VARCHAR2(50 CHAR) NOT NULL,
@@ -170,7 +170,7 @@ La tabla anterior representa a Agencias el cual contiene TIMESTAMP para manejar 
 
 Fue necesario implementar autoincrementos para las claves primarias de las tablas, aqui se deja un ejemplo de como se realiza con una tabla:
 
-```
+```sql
 -- Trigger para agencia
 CREATE OR REPLACE TRIGGER agencia_bi_trg
 BEFORE INSERT ON agencia
@@ -187,7 +187,7 @@ Para poder poblar nuestra base de datos con precisamente eso (datos) necesitamos
 
 ### EJEMPLO DE UN ARCHIVO QUE PERMITE LA CREACION DE UN ARCHIVO CSV CON LOS PARAMETROS REQUERIDOS Y LA CANTIDAD NECESITADA DE DATOS.
 
-```
+```python
 import pandas as pd
 import random
 from datetime import datetime
