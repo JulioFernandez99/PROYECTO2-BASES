@@ -15,6 +15,7 @@
 ## DATOS DEL PROYECTO
 Los siguientes archivos CSV están disponibles para cargar datos en la base de datos:
 
+<details>
 1. **Clientes** (`clientes_banco_jp_morgan_1m.csv`)
     
     **Campos:**
@@ -105,6 +106,11 @@ transacciones financieras que ocurren entre el banco central y las sucursales.
 11. **Tabla de Estado Financiero**: Esta tabla debe registrar los ingresos y gastos del
 banco, calculando su estado financiero, solvencia, y si el banco está en punto
 de equilibrio o en quiebra.
+
+  
+</details>
+
+
 
 ## DIAGRAMAS PARA LA IMPLEMENTACION DE LA BASE DE DATOS:
 
