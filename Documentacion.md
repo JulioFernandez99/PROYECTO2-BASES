@@ -114,3 +114,11 @@ Primero empezamos con nuestro diagrama conceptual que nos ayudará a comenzar co
 
 <img src="Imagenes/Conceptual.jpg" width="100%" height="600px"></img>
 
+Posteriormente procedemos a realizar un diagrama Lógico el cuál nos permite ver los tipo de datos que manejaremos para el proyecto y visualizar la base de datos de mejor manera, cuidando que este normalizada hasta la tercera forma.
+
+### DIAGRAMA LOGICO
+<img src="Imagenes/Logico.jpg" width="100%" height="600px"></img>
+
+Por ultimo se presenta el diagrama fisico, que es el modelo final de nuestra base de datos, este contiene la estructura normalizada a la tercera forma, contiene las identificaciones claras, los tipos de dato a utlizar, especificación de llaves foraneas, etc.
+
+<img src="Imagenes/Relacional.jpg" width="100%" height="600px"></img>
