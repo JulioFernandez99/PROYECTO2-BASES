@@ -106,18 +106,21 @@ transacciones financieras que ocurren entre el banco central y las sucursales.
 banco, calculando su estado financiero, solvencia, y si el banco está en punto
 de equilibrio o en quiebra.
 
-## ANALISIS DE DATOS:
-
-Primero empezamos con nuestro diagrama conceptual que nos ayudará a comenzar con una idea de lo que es la base de datos y la estimación de tablas que se requieren para implementar el proyecto.
+## DIAGRAMAS PARA LA IMPLEMENTACION DE LA BASE DE DATOS:
 
 ### DIAGRAMA CONCEPTUAL
 
+Primero empezamos con nuestro diagrama conceptual que nos ayudará a comenzar con una idea de lo que es la base de datos y la estimación de tablas que se requieren para implementar el proyecto.
+
 <img src="Imagenes/Conceptual.jpg" width="100%" height="600px"></img>
+
+### DIAGRAMA LOGICO
 
 Posteriormente procedemos a realizar un diagrama Lógico el cuál nos permite ver los tipo de datos que manejaremos para el proyecto y visualizar la base de datos de mejor manera, cuidando que este normalizada hasta la tercera forma.
 
-### DIAGRAMA LOGICO
 <img src="Imagenes/Logico.jpg" width="100%" height="600px"></img>
+
+### DIAGRAMA FISICO
 
 Por ultimo se presenta el diagrama fisico, que es el modelo final de nuestra base de datos, este contiene la estructura normalizada a la tercera forma, contiene las identificaciones claras, los tipos de dato a utlizar, especificación de llaves foraneas, etc.
 
