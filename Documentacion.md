@@ -8,13 +8,20 @@
 | Julio Fernandez | Al rato los pongo xd | 
 | Eduardo | ... | 
 
+<br>
+
 ## HERRAMIENTAS
 - **DATA MODELER:** Para crear el diagrama fisico y logico.
 - **SQL:** Para realizar las tablas y los scripts necesarios.
+- **Python:** Para realizar un programa que devuelva csv y poblar la base de datos.
+
+<br>
 
 ## DATOS DEL PROYECTO
 Los siguientes archivos CSV están disponibles para cargar datos en la base de datos:
 
+<details>
+    
 1. **Clientes** (`clientes_banco_jp_morgan_1m.csv`)
     
     **Campos:**
@@ -106,6 +113,204 @@ transacciones financieras que ocurren entre el banco central y las sucursales.
 banco, calculando su estado financiero, solvencia, y si el banco está en punto
 de equilibrio o en quiebra.
 
-## ANALISIS DE DATOS:
+  
+</details>
 
-Primero empezamos con nuestro diagrama conceptual que nos ayudará a comenzar con una idea de lo que es la base de datos:
+
+<br>
+
+## DIAGRAMAS PARA LA IMPLEMENTACION DE LA BASE DE DATOS:
+
+### DIAGRAMA CONCEPTUAL
+
+Primero empezamos con nuestro diagrama conceptual que nos ayudará a comenzar con una idea de lo que es la base de datos y la estimación de tablas que se requieren para implementar el proyecto.
+
+<img src="Imagenes/Conceptual.jpg" width="100%" height="600px"></img>
+
+### DIAGRAMA LOGICO
+
+Posteriormente procedemos a realizar un diagrama Lógico el cuál nos permite ver los tipo de datos que manejaremos para el proyecto y visualizar la base de datos de mejor manera, cuidando que este normalizada hasta la tercera forma.
+
+<img src="Imagenes/Logico.jpg" width="100%" height="600px"></img>
+
+### DIAGRAMA FISICO
+
+Por ultimo se presenta el diagrama fisico, que es el modelo final de nuestra base de datos, este contiene la estructura normalizada a la tercera forma, contiene las identificaciones claras, los tipos de dato a utlizar, especificación de llaves foraneas, etc.
+
+<img src="Imagenes/Relacional.jpg" width="100%" height="600px"></img>
+
+
+**NOTA**: El diagrama final esta normalizado a la 3F. 
+
+<br>
+
+## IMPLEMENTACION - SCRIPTS EN ORACLE SQL
+
+Realizamos el archivo sql, que contiene la creación de todas las tablas que hemos obtenido según nuestro modelo final (Fisico). 
+
+### EJEMPLO DE UNA TABLA CREADA:
+
+```sql
+CREATE TABLE agencia (
+    id_agencia             INTEGER NOT NULL,
+    nombre                 VARCHAR2(50 CHAR) NOT NULL,
+    tipo_agencia           VARCHAR2(20 CHAR) NOT NULL,
+    telefono               VARCHAR2(30 CHAR) NOT NULL,
+    id_municipio           INTEGER NOT NULL,
+    id_tipo_sucursal       INTEGER NOT NULL, 
+    id_estado_financiero   INTEGER NOT NULL,
+    id_boveda              INTEGER NOT NULL,
+    fecha_creacion         TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL,
+    fecha_actualizacion    TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL
+);
+```
+La tabla anterior representa a Agencias el cual contiene TIMESTAMP para manejar fechas, validando que puedan existir valores nulos.
+
+### TRIGGERS PARA LAS SECUENCIAS DE AUTOINCREMENTO
+
+Fue necesario implementar autoincrementos para las claves primarias de las tablas, aqui se deja un ejemplo de como se realiza con una tabla:
+
+```sql
+-- Trigger para agencia
+CREATE OR REPLACE TRIGGER agencia_bi_trg
+BEFORE INSERT ON agencia
+FOR EACH ROW
+BEGIN
+    SELECT agencia_seq.NEXTVAL INTO :NEW.id_agencia FROM dual;
+END;
+/
+```
+
+## POBLAR NUESTRA BASE DE DATOS
+
+Para poder poblar nuestra base de datos con precisamente eso (datos) necesitamos crear diversos archivos csv, que serán leídos y almacenados en cada una de las tablas que se tienen en el modelo y de esta manera estar listos para realizar consultas básicas y avanzadas, completando la simulación de un banco.
+
+### EJEMPLO DE UN ARCHIVO QUE PERMITE LA CREACION DE UN ARCHIVO CSV CON LOS PARAMETROS REQUERIDOS Y LA CANTIDAD NECESITADA DE DATOS.
+
+```python
+import pandas as pd
+import random
+from datetime import datetime
+
+def generate_agencia(n):
+    agencia_data = {
+        "id_agencia": [],
+        "nombre": [],
+        "tipo_agencia": [],
+        "telefono": [],
+        "id_municipio": [],
+        "id_tipo_sucursal": [],
+        "id_estado_financiero": [],
+        "id_boveda": [],
+        "fecha_creacion": [],
+        "fecha_actualizacion": []
+    }
+
+    tipos_agencia = ["Oficina", "Sucursal", "Agencia"]
+
+    for i in range(n):
+        id_agencia = i + 1  # Iniciar desde 1
+        agencia_data["id_agencia"].append(id_agencia)
+        agencia_data["nombre"].append(f"Agencia {id_agencia}")  # Cambiar el nombre
+        agencia_data["tipo_agencia"].append(random.choice(tipos_agencia))
+        agencia_data["telefono"].append(f"123456{id_agencia}")  # Teléfono modificado
+        agencia_data["id_municipio"].append(random.randint(1, 340))  # ID de municipio limitado entre 1 y 340
+        agencia_data["id_tipo_sucursal"].append(random.randint(1, 2))  # ID de tipo sucursal limitado entre 1 y 2
+        agencia_data["id_estado_financiero"].append(id_agencia)  # ID de estado financiero igual a id_agencia
+        agencia_data["id_boveda"].append(id_agencia)  # ID de boveda igual a id_agencia
+        agencia_data["fecha_creacion"].append(datetime.now())
+        agencia_data["fecha_actualizacion"].append(datetime.now())
+
+    pd.DataFrame(agencia_data).to_csv("agencia.csv", index=False)
+    print("CSV generado para la tabla agencia.")
+
+if __name__ == "__main__":
+    n = int(input("¿Cuántos registros deseas generar para la tabla agencia? "))
+    generate_agencia(n)
+```
+
+**NOTA** Cada tabla tiene su respectivo script en python que se encarga de realizar los datos. Para fines del proyecto y evitar problemas en la base de datos, se ha verificado que los datos tengan una logica para que se relacionen correctamente.
+
+
+<br>
+
+## CONSULTAS
+
+### CONSULTAS BASICAS
+
+Se han realizado consultas básicas para verificar el correcto funcionamiento de la base de datos
+
+### Obtener todos los clientes
+# Consultas simples
+
+### Obtener todos los clientes
+```sql
+    SELECT * FROM cliente;
+```
+
+### Contar el numero de agencias
+```sql
+    SELECT COUNT(*) AS total_agencias FROM agencia;
+```
+
+### Obtener los nombres de todos los empleados
+```sql
+    SELECT nombre FROM empleado;
+```
+
+### Obtener el saldo total de de todas las cuentas
+```sql
+    SELECT SUM(saldo) AS total_saldo FROM cuenta;
+```
+
+### Listar todos los estados de los prestamos
+```sql
+    SELECT * FROM estado_prestamo;
+```
+---
+<br>
+
+# CONSULTAS AVANZADAS
+Las consultas avanzadas se encargan de comprobar de una manera más especifica el correcto funcionamiento de la base de datos.
+
+### Obtener la información de los préstamos junto con el nombre del cliente
+```sql
+    SELECT p.id_prestamo, p.monto_prestamo, c.nombre, c.apellido
+    FROM prestamo p
+    JOIN cliente c ON p.id_cliente = c.id_cliente;
+```
+
+### Listar todas las transacciones junto con la información del cliente y el tipo de transacción
+```sql
+    SELECT t.id_transaccion, t.monto, c.nombre, c.apellido, tt.tipo_transaccion
+    FROM transaccion t
+    JOIN cliente c ON t.id_cliente = c.id_cliente
+    JOIN tipo_transaccion tt ON t.id_tipo_transaccion = tt.id_tipo_transaccion;
+```
+
+### Obtener el saldo de las cuentas junto con el nombre de la agencia
+```sql
+    SELECT c.num_cuenta, c.saldo, a.nombre AS nombre_agencia
+    FROM cuenta c
+    JOIN agencia a ON c.id_agencia = a.id_agencia;
+```
+
+### Listar todos los empleados junto con el nombre de su supervisor
+```sql
+    SELECT e.nombre AS empleado, es.nombre AS supervisor
+    FROM empleado e
+    LEFT JOIN empleado es ON e.id_empleado_sup = es.id_empleado;
+```
+
+### Obtener el estado financiero de cada agencia con su nombre
+```sql
+    SELECT a.nombre AS nombre_agencia, ef.ingresos, ef.gastos, ef.resultado_neto
+    FROM estado_financiero ef
+    JOIN agencia a ON ef.id_agencia = a.id_agencia;
+```
+
+
+<br>
+
+
+

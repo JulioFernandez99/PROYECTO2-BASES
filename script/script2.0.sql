@@ -534,7 +534,7 @@ CREATE TABLE transaccion (
     id_tipo_transaccion  INTEGER NOT NULL,
     monto                FLOAT(15) NOT NULL,
     fecha                DATE NOT NULL,
-    hora                 DATE NOT NULL,
+    hora                 TIMESTAMP NOT NULL,
     descripcion          VARCHAR2(255 CHAR) NOT NULL,
     id_empleado          INTEGER NOT NULL,
     id_rol               INTEGER NOT NULL,
@@ -547,7 +547,7 @@ CREATE TABLE transacciones_prestamo (
     id_prestamo           INTEGER NOT NULL,
     id_transaccion_prestamo INTEGER NOT NULL,
     fecha                 DATE NOT NULL,
-    hora                  DATE NOT NULL,
+    TIMESTAMP NOT NULL,
     descripcion           VARCHAR2(255 CHAR) NOT NULL
 );
 
@@ -563,7 +563,7 @@ CREATE TABLE transacciones_tarjeta_cr (
     id_tarjeta_cr            INTEGER NOT NULL,
     id_transaccion_tarjeta_cr INTEGER NOT NULL,
     fecha                    DATE NOT NULL,
-    hora                     DATE NOT NULL,
+    hora                     TIMESTAMP NOT NULL,
     descripcion              VARCHAR2(255 CHAR) NOT NULL,
     id_cliente               INTEGER NOT NULL
 );
@@ -583,7 +583,7 @@ CREATE TABLE transacciones_tarjeta_db (
     id_cliente                   INTEGER NOT NULL,
     id_tarjeta_db                INTEGER NOT NULL,
     fecha                        DATE NOT NULL,
-    hora                         DATE NOT NULL,
+    hora                         TIMESTAMP NOT NULLL,
     descripcion                  VARCHAR2(255 CHAR), 
     id_estado_tarjeta_db         INTEGER NOT NULL
 );
