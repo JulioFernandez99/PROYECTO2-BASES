@@ -5,8 +5,8 @@
 | Nombre | Carnet  |
 |------------|------------|
 | Kevin Estuardo Del Cid Quezada | 202103252 | 
-| Julio Fernandez | Al rato los pongo xd | 
-| Eduardo | ... | 
+| Julio Fernandez | 201902416 | 
+| Eduardo | 201800918 | 
 
 <br>
 
